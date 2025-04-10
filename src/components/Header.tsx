@@ -5,20 +5,20 @@ import { books } from '@/constants/books';
 const Header: React.FC = () => {
 	return (
 		<header>
-			<div className='flex flex-row w-full gap-32 px-16 py-48 bg-bones-linen dark:bg-bones-dimgray'>
+			<div className='flex flex-row w-full gap-32 px-16 py-48 bg-bones-linen dark:bg-bones-black'>
 				<div className='flex flex-col items-start justify-between w-full space-y-6 md:w-1/2'>
-					<p className='italic font-black text-bones-black dark:text-bones-linen text-7xl'>
-						21 books to re-shape how you think about great design.
+					<p className='italic font-black text-bones-black dark:text-bones-linen text-6xl'>
+						21 books to re-shape how you think about design.
 					</p>
-					<div className='space-y-2'>
-						<p className='text-2xl font-black text-left text-bones-black dark:text-bones-linen'>
+					<div className='flex flex-col gap-2'>
+						<p className='text-3xl font-black text-left text-bones-black dark:text-bones-linen'>
 							by Barry Prendergast
 						</p>
 						<a
 							href='https://links.renderg.host'
 							target='_blank'
 							rel='noopener noreferrer'
-							className='text-base font-medium text-bones-blue dark:text-bones-yellow hover:underline'>
+							className='font-semibold text-lg text-bones-blue dark:text-bones-gold hover:underline'>
 							links.renderg.host
 						</a>
 					</div>

@@ -23,7 +23,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 					src={book.coverImage}
 					alt={`Cover of ${book.title}`}
 					fill
-					className='object-cover p-2 rounded dark:brightness-90'
+					className='object-cover p-2 rounded'
 					sizes='(max-width: 768px) 100vw, 320px'
 					priority
 				/>
@@ -31,7 +31,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 			{/* Content */}
 			<div className='flex flex-col items-start self-stretch justify-between flex-1'>
 				<div className='py-8'>
-					<blockquote className='font-normal italic text-8xl text-bones-black dark:text-bones-linen md:text-5xl'>
+					<blockquote className='font-normal italic text-9xl text-bones-black dark:text-bones-linen md:text-5xl leading-relaxed'>
 						{book.personalComment}
 					</blockquote>
 				</div>
@@ -47,7 +47,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 								<a
 									key={index}
 									href={author.url || '#'}
-									className='text-bones-blue dark:text-bones-yellow hover:underline'
+									className='text-bones-blue dark:text-bones-gold hover:underline font-semibold'
 									target='_blank'
 									rel='noopener noreferrer'>
 									{author.name}
@@ -73,14 +73,14 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 								</span>
 							)} */}
 						</div>
-						<div className='flex flex-wrap gap-8 font-medium text-bones-blue dark:text-bones-lightsteelblue'>
+						<div className='flex flex-wrap gap-8 font-medium text-bones-blue dark:text-bones-lightsteelblue font-semibold'>
 							{links.map((link, index) => (
 								<a
 									key={index}
 									href={link.url}
 									target='_blank'
 									rel='noopener noreferrer'
-									className='text-bones-blue dark:text-bones-yellow hover:underline'>
+									className='text-bones-blue dark:text-bones-gold hover:underline'>
 									{link.label}
 								</a>
 							))}
