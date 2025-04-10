@@ -34,7 +34,7 @@ export default function RootLayout({
 		<html
 			lang='en'
 			className={`${dmSans.variable} ${dmSerifDisplay.variable}`}>
-			<body className='min-h-screen font-sans antialiased bg-bones-snow dark:bg-bones-midnightblue'>
+			<body className='min-h-screen font-sans antialiased bg-bones-linen dark:bg-bones-midnightblue'>
 				{children}
 			</body>
 		</html>

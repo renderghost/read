@@ -16,6 +16,7 @@ const config: Config = {
 				'bones-ghostwhite': '#F8F8FF',
 				'bones-gray': '#808080',
 				'bones-snow': '#FFFAFA',
+				'bones-linen': `#FAF0E6`,
 				'bones-floralwhite': `#FFFAF0`,
 				'bones-lightsteelblue': '#B0C4DE',
 				'bones-slategray': '#708090',

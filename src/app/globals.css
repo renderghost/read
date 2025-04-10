@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: theme('colors.bones-midnightblue');
-		--foreground: theme('colors.bones-snow');
+		--foreground: theme('colors.bones-linen');
 	}
 }
 
