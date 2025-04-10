@@ -17,7 +17,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'A practical reference full of UI patterns and insights that helped sharpen my design vocabulary and decision-making.',
+			' Built my interaction design vocabulary early on—gave me the foundational UI patterns I still lean on today.',
 
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
@@ -40,7 +40,7 @@ export const books: Book[] = [
 			publisher: 'Chatto & Windus',
 		},
 		personalComment:
-			"An insightful exploration into human consciousness and perception, offering a profound perspective on the mind's potential.",
+			'Changed how I think about human perception—reminded me that design always starts with human senses and how people perceive the world.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
@@ -62,7 +62,7 @@ export const books: Book[] = [
 			publisher: 'Harper Business',
 		},
 		personalComment:
-			'Provides a compelling analysis of the shifting global landscape and the challenges that lie ahead in a deglobalizing world.',
+			'Rethinking complex systems, hierachies of control, and global dependencies—provides useful perspective about ethical systems that scale influence.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
 		amazonUrl:
@@ -86,7 +86,7 @@ export const books: Book[] = [
 			publisher: 'Verso Books',
 		},
 		personalComment:
-			'An optimistic vision of a future where automation and technology liberate humanity from work, prompting me to rethink societal progress.',
+			'A hopeful take on tech—pushed me to think about the role of human labour in a post-work society.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism',
 		amazonUrl: `https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624`,
@@ -108,7 +108,7 @@ export const books: Book[] = [
 			publisher: 'Basic Books',
 		},
 		personalComment:
-			'A profound exploration of patterns and consciousness that interweaves art, music, and mathematics, challenging my perceptions of intelligence.',
+			'Reminded me that great design both mirrors and influences the complex systems it touches—recursive, poetic, and deeply interwoven.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
 		goodreadsUrl: `https://www.goodreads.com/book/show/24113.G_del_Escher_Bach`,
 		amazonUrl: `https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567`,
@@ -129,7 +129,7 @@ export const books: Book[] = [
 			publisher: 'Penguin Classics',
 		},
 		personalComment:
-			'A thought-provoking collection that delves into themes of isolation, bureaucracy, and the human condition.',
+			'A thought-provoking collection that delves into themes of isolation, bureaucracy, and the human condition-an allergory about the importance of vision and the human cost of grand projects.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
 		amazonUrl: `https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083`,
@@ -141,12 +141,13 @@ export const books: Book[] = [
 		coverImage: '/books/covert.jpg',
 		metadata: {
 			publishYear: 2014,
-			genre: 'Information Architecture',
+			genre: 'Sensemaking Strategies',
 			pages: 174,
 			publisher: 'CreateSpace Independent Publishing Platform',
 		},
 		personalComment:
-			'A practical guide that has been instrumental in improving my ability to organize and structure complex information effectively.',
+			'Taught me about how bring order to ambiguity—an essential mindset for navigating the messy middle of any interesting design challenge.',
+
 		homeUrl: 'https://www.howtomakesenseofanymess.com/',
 		amazonUrl: `https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess`,
@@ -162,12 +163,12 @@ export const books: Book[] = [
 		coverImage: '/books/wodtke.jpg',
 		metadata: {
 			publishYear: 2002,
-			genre: 'Content Strategy',
+			genre: 'Content Strategies',
 			pages: 224,
 			publisher: 'New Riders',
 		},
 		personalComment:
-			'This book provided me with foundational knowledge in structuring and organizing web content for optimal user experience.',
+			'Helped me see sites and apps as structured systems, not just a bundle of pages—core to how I think about content hierarchies and navigation.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Information_architecture',
 		amazonUrl: `https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/224130.Information_Architecture`,
@@ -188,8 +189,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'An essential resource that has sharpened my skills in designing clear and effective data dashboards.',
-
+			'Taught me that clarity beats cleverness—especially when presenting data. Changed how I think about visual hierarchy and actionable information design.',
 		amazonUrl: `https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/3254937-information-dashboard-design`,
 	},
@@ -209,7 +209,7 @@ export const books: Book[] = [
 			publisher: 'Semantic Studios',
 		},
 		personalComment:
-			'This book broadened my perspective on the interconnectedness of information and its impact on design and architecture.',
+			'Helped me see design as an exercise in information choreography—everything is connected, and how we frame that matters more than we might think.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Peter_Morville',
 		amazonUrl: `https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/22931460-intertwingled`,
@@ -253,7 +253,7 @@ export const books: Book[] = [
 			publisher: 'The MIT Press',
 		},
 		personalComment:
-			'Offers valuable principles for achieving clarity and simplicity in design, which have been instrumental in my professional approach.',
+			'Made simplicity feel tangible and specific—tightened my thinking on what really matters in both design and communication and work methods.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
@@ -261,28 +261,6 @@ export const books: Book[] = [
 			'https://www.amazon.de/-/en/Laws-Simplicity-Design-Technology-Business/dp/0262539470',
 		homeUrl: `http://lawsofsimplicity.com/`,
 	},
-	// {
-	// 	title: 'Mapping Experiences',
-	// 	authors: [
-	// 		{
-	// 			name: 'James Kalbach',
-	// 			url: 'https://www.linkedin.com/in/kalbach',
-	// 		},
-	// 	],
-	// 	coverImage: '/books/kalbach.jpg',
-	// 	metadata: {
-	// 		publishYear: 2016,
-	// 		genre: 'User Experience',
-	// 		pages: 379,
-	// 		publisher: "O'Reilly Media",
-	// 	},
-	// 	personalComment:
-	// 		'An insightful guide that enhanced my ability to visualize and improve customer journeys and experiences.',
-	// 	goodreadsUrl:
-	// 		'https://www.goodreads.com/book/show/26261417-mapping-experiences',
-	// 	amazonUrl:
-	// 		'https://www.amazon.com/Mapping-Experiences-Complete-Creating-Blueprints/dp/1491923539',
-	// },
 	{
 		title: 'Mind Design II: Philosophy, Psychology, and Artificial Intelligence',
 		authors: [
@@ -299,7 +277,7 @@ export const books: Book[] = [
 			publisher: 'The MIT Press',
 		},
 		personalComment:
-			'A collection of essays that deepened my understanding of the philosophical and psychological aspects of AI.',
+			'Gave me deeper language to talk about machine and human intelligence—and reflect on where design fits in that conversation.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/150696.Mind_Design_II',
 		amazonUrl:
@@ -322,7 +300,7 @@ export const books: Book[] = [
 			publisher: 'Jonathan Cape',
 		},
 		personalComment:
-			'A compelling collection of essays that offer a raw and unfiltered glimpse into various facets of human experience.',
+			'Reminded me that good storytelling (and the humans those stories are about) is raw, weird, and true—exactly what design needs more of.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/24820339-non-fiction',
 		amazonUrl: 'https://www.amazon.de/-/en/Palahniuk-Chuck/dp/0224063022',
@@ -349,7 +327,7 @@ export const books: Book[] = [
 			publisher: 'Charivari Press & Blackwood Gallery',
 		},
 		personalComment:
-			'An influential anthology that expanded my understanding of sound art and its diverse practices.',
+			'Expanded my idea of what constitutes "experience"—got me thinking about space, time, and interactions beyond screens.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/15755476-sound-by-artists',
 		amazonUrl:
@@ -372,7 +350,7 @@ export const books: Book[] = [
 			publisher: 'Farrar, Straus and Giroux',
 		},
 		personalComment:
-			'Revolutionized my understanding of decision-making and the biases that affect our everyday judgments.',
+			'Reset how I think about how people make choices—biases, habits, the lot. Critical for designing anything with human behaviour in mind.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
@@ -395,7 +373,7 @@ export const books: Book[] = [
 			publisher: 'TarcherPerigee',
 		},
 		personalComment:
-			"Offers a modern take on Maslow's hierarchy, inspiring a deeper pursuit of personal growth and fulfillment.",
+			"Nudged me to take motivation and emotion seriously in life—there's more to life than efficiency.",
 		goodreadsUrl: 'https://www.goodreads.com/book/show/49625550-transcend',
 		amazonUrl:
 			'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
@@ -417,7 +395,7 @@ export const books: Book[] = [
 			publisher: 'Graphics Press',
 		},
 		personalComment:
-			'A seminal work that has greatly influenced my understanding and practice of presenting data effectively.',
+			'A seminal work that has taught me so much about how to make data feel honest. Precision with purpose.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
 		amazonUrl:
@@ -440,7 +418,7 @@ export const books: Book[] = [
 			publisher: 'Penguin Books',
 		},
 		personalComment:
-			'Changed how I perceive and interpret visual culture, enriching my appreciation for art and media.',
+			'Changed how I understand images, power, and culture. Still shapes how I read interfaces, read content and approach critical thinking.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
 		goodreadsUrl: 'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
 		amazonUrl:
@@ -486,7 +464,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'A snapshot of the early internet that reminds me how far we’ve come—and how much foundational knowledge still matters.',
+			'A time capsule of the web’s early spirit—reminded me that openness, curiosity, and DIY were there from the start and can still be found online.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
 		goodreadsUrl: 'https://www.goodreads.com/book/show/2954315',
