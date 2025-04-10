@@ -5,9 +5,9 @@ import { books } from '@/constants/books';
 const Header: React.FC = () => {
 	return (
 		<header>
-			<div className='container flex flex-row w-full gap-16 p-16 mx-auto bg-bones-white dark:bg-bones-dimgray'>
+			<div className='flex flex-row w-full gap-32 p-16 bg-bones-white dark:bg-bones-dimgray'>
 				<div className='flex flex-col items-start justify-between w-full space-y-6 md:w-1/2'>
-					<p className='text-3xl italic font-semibold text-left text-black md:text-5xl'>
+					<p className='italic font-bold text-black text-7xl'>
 						21 books that shaped how I think about design.
 					</p>
 					<div className='space-y-2'>
@@ -23,16 +23,19 @@ const Header: React.FC = () => {
 						</a>
 					</div>
 				</div>
-				<div className='flex flex-wrap items-start justify-start w-full gap-2 overflow-hidden md:w-1/2'>
+				<div className='grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8 w-fit'>
 					{books.map((book, index) => (
-						<Image
+						<div
 							key={`${book.title}-${index}`}
-							src={book.coverImage}
-							alt={`Cover of ${book.title}`}
-							width={68}
-							height={125}
-							className='flex-grow-0 flex-shrink-0 object-cover'
-						/>
+							className='w-[68px] h-[100px] overflow-hidden rounded-sm'>
+							<Image
+								src={book.coverImage}
+								alt={`Cover of ${book.title}`}
+								width={68}
+								height={100}
+								className='object-cover w-full h-full'
+							/>
+						</div>
 					))}
 				</div>
 			</div>

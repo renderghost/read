@@ -5,7 +5,7 @@ import { books } from '@/constants/books';
 const BookList: React.FC = () => {
 	return (
 		<section>
-			<div className='container flex flex-col gap-px mx-auto'>
+			<div className='flex flex-col gap-px'>
 				{books.map((book, index) => (
 					<BookCard key={`${book.title}-${index}`} book={book} />
 				))}
