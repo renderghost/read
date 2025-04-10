@@ -73,7 +73,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 								</span>
 							)} */}
 						</div>
-						<div className='flex flex-wrap gap-8 font-medium text-bones-blue dark:text-bones-lightsteelblue font-semibold'>
+						<div className='flex flex-wrap gap-8 text-bones-blue dark:text-bones-lightsteelblue font-semibold'>
 							{links.map((link, index) => (
 								<a
 									key={index}
