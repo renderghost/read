@@ -20,7 +20,7 @@ const dmSerifDisplay = DM_Serif_Display({
 
 // Metadata for the site
 export const metadata: Metadata = {
-	title: 'readerghost: 21 recommendations for books to read',
+	title: 'read: 21 recommendations for books to read',
 	description: 'A curated list of 21 books that you should read',
 };
 
