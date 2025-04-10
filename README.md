@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Readerghost
+
+A personal book collection showcase built with Next.js 15.3, TypeScript, and Tailwind CSS. This application displays a curated collection of influential books that have shaped thoughts and perspectives across various domains including design, technology, philosophy, and art.
+
+## Features
+
+- 📚 **Curated Book Collection**: Showcase of carefully selected books with cover images and detailed metadata
+- 📝 **Personal Insights**: Each book entry includes personal comments on its impact and relevance
+- 🔗 **External Resources**: Direct links to Amazon, Goodreads, Wikipedia, and official book websites
+- 📱 **Responsive Design**: Clean, accessible interface that works across all devices using Tailwind CSS 3
+- 🚀 **Modern Stack**: Built with Next.js 15.3, React 19, and TypeScript for optimal performance
+
+## Technical Stack
+
+- **Framework**: Next.js 15.3
+- **Language**: TypeScript
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 3.4
+- **Development**: 
+  - Turbopack for fast development builds
+  - ESLint for code quality
+  - Prettier for consistent formatting
+
+## Project Structure
+
+```
+read/
+├── public/
+│   └── books/          # Book cover images
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx  # Root layout component
+│   │   └── page.tsx    # Home page component
+│   ├── components/     # Reusable components
+│   │   ├── BookCard.tsx
+│   │   ├── BookList.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   └── Layout.tsx
+│   ├── constants/
+│   │   └── books.ts    # Book collection data
+│   └── types/
+│       └── Book.ts     # TypeScript interfaces
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone [repository-url]
+cd read
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:3000` with Turbopack enabled for faster development builds.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+# or
+yarn build
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is optimized for deployment on Vercel. The easiest way to deploy is directly through the [Vercel Platform](https://vercel.com/new).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development Guidelines
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Code Style
 
-## Deploy on Vercel
+- Use TypeScript for all components and functions
+- Follow ESLint rules for consistent code quality
+- Prettier configuration:
+  - Print Width: 200
+  - Prose Wrap: never
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Component Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Components follow the 'bones' design system naming convention (e.g., 'bones-card')
+- Each component should be a standalone module with its own types and styles
+- Use TypeScript interfaces for prop definitions
+
+### Asset Management
+
+- Book cover images go in `/public/books/`
+- Images should be optimized for web usage
+- Follow the established naming convention for new assets
+
+### Security
+
+- SSH access to local development server (192.168.178.100) and GitHub is configured
+- Keys are managed through 1Password for enhanced security
+- Password authentication is set as the preferred method
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For any queries or support, please open an issue in the GitHub repository.
+
+## Additional Technical Notes
+
+This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and includes:
+
+- [Geist Font](https://vercel.com/font) automatically optimized via [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+- Hot module replacement with auto-updating as you edit files
+
+## Resources
+
+- [Next.js Documentation](https://nextjs.org/docs) - comprehensive guides and API references
+- [Learn Next.js](https://nextjs.org/learn) - interactive tutorial
+- [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying)
