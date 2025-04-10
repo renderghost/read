@@ -17,8 +17,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			' Built my interaction design vocabulary early on—gave me the foundational UI patterns I still lean on today.',
-
+			'Built my interaction design vocabulary early on—gave me the foundational UI patterns I still lean on today.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
 		amazonUrl:
@@ -47,7 +46,7 @@ export const books: Book[] = [
 		amazonUrl: `https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719`,
 	},
 	{
-		title: 'The End of the World Is Just the Beginning: Mapping the Collapse of Globalization',
+		title: 'The End of the World Is Just the Beginning: Mapping the Collapse of Globalisation',
 		authors: [
 			{
 				name: 'Peter Zeihan',
@@ -62,7 +61,7 @@ export const books: Book[] = [
 			publisher: 'Harper Business',
 		},
 		personalComment:
-			'Rethinking complex systems, hierachies of control, and global dependencies—provides useful perspective about ethical systems that scale influence.',
+			'Rethinking complex systems, hierarchies of control, and global dependencies—provides useful perspective about ethical systems that scale influence.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
 		amazonUrl:
@@ -184,7 +183,7 @@ export const books: Book[] = [
 		coverImage: '/books/few.jpg',
 		metadata: {
 			publishYear: 2006,
-			genre: 'Data Visualization',
+			genre: 'Data Visualisation',
 			pages: 223,
 			publisher: "O'Reilly Media",
 		},
@@ -358,7 +357,7 @@ export const books: Book[] = [
 			'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
 	},
 	{
-		title: 'Transcend: The New Science of Self-Actualization',
+		title: 'Transcend: The New Science of Self-Actualisation',
 		authors: [
 			{
 				name: 'Scott Barry Kaufman',
@@ -390,7 +389,7 @@ export const books: Book[] = [
 		coverImage: '/books/tufte.jpg',
 		metadata: {
 			publishYear: 1983,
-			genre: 'Data Visualization',
+			genre: 'Data Visualisation',
 			pages: 197,
 			publisher: 'Graphics Press',
 		},

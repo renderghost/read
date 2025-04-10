@@ -5,7 +5,7 @@ import { books } from '@/constants/books';
 const Header: React.FC = () => {
 	return (
 		<header>
-			<div className='flex flex-row w-full gap-32 p-16 bg-bones-white dark:bg-bones-dimgray'>
+			<div className='flex flex-row w-full gap-32 px-16 py-48 bg-bones-linen dark:bg-bones-dimgray'>
 				<div className='flex flex-col items-start justify-between w-full space-y-6 md:w-1/2'>
 					<p className='italic font-bold text-black text-7xl'>
 						21 books that shaped how I think about design.

@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: theme('colors.bones-white');
-  --foreground: theme('colors.bones-black');
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-dm-serif-display);
+	--background: theme('colors.bones-white');
+	--foreground: theme('colors.bones-black');
+	--font-sans: var(--font-dm-sans);
+	--font-serif: var(--font-dm-serif-display);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: theme('colors.bones-midnightblue');
-    --foreground: theme('colors.bones-whitesmoke');
-  }
+	:root {
+		--background: theme('colors.bones-midnightblue');
+		--foreground: theme('colors.bones-linen');
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+	background: var(--background);
+	color: var(--foreground);
 }
