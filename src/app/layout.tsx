@@ -20,8 +20,8 @@ const dmSerifDisplay = DM_Serif_Display({
 
 // Metadata for the site
 export const metadata: Metadata = {
-	title: 'read: 21 recommendations for books to read',
-	description: 'A curated list of 21 books that you should read',
+	title: 'read | Book recommendations by Barry Prendergast.',
+	description: '21 books to re-shape how you think about great design.',
 };
 
 // Root layout component with TypeScript typing
