@@ -1,26 +1,25 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
-  return (
-    <footer className="py-8 px-6 md:px-12 bg-bones-whitesmoke border-t border-bones-gainsboro">
-      <div className="max-w-5xl mx-auto flex justify-between items-center">
-        <p className="text-sm text-bones-dimgray">
-          © {new Date().getFullYear()} readerghost
-        </p>
-        <div>
-          <a 
-            href="https://links.renderg.host" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-sm text-bones-blue hover:text-bones-midnightblue transition-colors duration-200 underline"
-          >
-            links.renderg.host
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
+	return (
+		<footer className='py-8 bg-bones-whitesmoke dark:bg-bones-dimgray border-t border-bones-gainsboro dark:border-bones-slategray'>
+			<div className='container flex items-center justify-between mx-auto'>
+				<p className='text-sm text-bones-dimgray dark:text-bones-gainsboro'>
+					© {new Date().getFullYear()} readerghost. All rights reserved.
+				</p>
+				<div className='flex flex-col items-center justify-center text-sm font-medium'>
+					<a
+						href='https://links.renderg.host'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='text-bones-blue dark:text-bones-lightsteelblue hover:text-bones-midnightblue dark:hover:text-bones-white'
+					>
+						links.renderg.host
+					</a>
+				</div>
+			</div>
+		</footer>
+	);
 };
 
 export default Footer;
-

@@ -3,62 +3,88 @@ import Image from 'next/image';
 import { Book } from '@/types/Book';
 
 interface BookCardProps {
-  book: Book;
+	book: Book;
 }
 
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
-  return (
-    <div className="bg-bones-white border border-bones-gainsboro rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-      <div className="relative h-64 w-full">
-        <Image 
-          src={book.coverImage} 
-          alt={`Cover of ${book.title} by ${book.author}`}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover"
-          priority
-        />
-      </div>
-      
-      <div className="p-5">
-        <h2 className="text-xl font-serif text-bones-black mb-1 line-clamp-2">
-          {book.title}
-        </h2>
-        
-        <p className="text-sm text-bones-dimgray mb-3">
-          by {book.author}
-        </p>
-        
-        <div className="flex flex-wrap gap-2 mb-3">
-          <span className="text-xs bg-bones-aliceblue text-bones-midnightblue px-2 py-1 rounded-full">
-            {book.metadata.genre}
-          </span>
-          <span className="text-xs bg-bones-aliceblue text-bones-midnightblue px-2 py-1 rounded-full">
-            {book.metadata.publishYear}
-          </span>
-          {book.metadata.pages && (
-            <span className="text-xs bg-bones-aliceblue text-bones-midnightblue px-2 py-1 rounded-full">
-              {book.metadata.pages} pages
-            </span>
-          )}
-        </div>
-        
-        <p className="text-sm text-bones-gray mb-4 line-clamp-3">
-          "{book.personalComment}"
-        </p>
-        
-        <a 
-          href={book.wikipediaUrl} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-block text-sm text-bones-blue hover:text-bones-midnightblue transition-colors duration-200 underline"
-        >
-          Learn more
-        </a>
-      </div>
-    </div>
-  );
+	const links = [
+		{ label: 'GoodReads', url: book.goodreadsUrl },
+		{ label: 'Wikipedia', url: book.wikipediaUrl },
+		{ label: 'Amazon', url: book.amazonUrl },
+		{ label: 'Official Site', url: book.homeUrl },
+	].filter(link => link.url && link.url !== '#');
+
+	return (
+		<div className='flex flex-col items-start justify-start w-full gap-16 p-16 md:flex-row bg-bones-white dark:bg-bones-dimgray'>
+			{/* ——— */}
+			{/* Image */}
+			<div className='flex-shrink-0 w-full md:w-80 h-[500px] rounded relative p-1 ring-1 ring-bones-gainsboro dark:ring-bones-dimgray'>
+				<Image
+					src={book.coverImage}
+					alt={`Cover of ${book.title}`}
+					fill
+					className='object-cover p-2 rounded dark:brightness-90'
+					sizes='(max-width: 768px) 100vw, 320px'
+					priority
+				/>
+			</div>
+			{/* Content */}
+			<div className='flex flex-col items-start self-stretch justify-between flex-1'>
+				<div className='py-8'>
+					<blockquote className='font-bold text-left text-8xl text-bones-black dark:text-bones-whitesmoke md:text-5xl'>
+						{book.personalComment}
+					</blockquote>
+				</div>
+
+				<div className='flex flex-col gap-4'>
+					<p className='text-2xl font-black text-left text-bones-black dark:text-bones-whitesmoke'>
+						{book.title}
+					</p>
+
+					<div className='flex flex-wrap gap-2 text-base font-medium text-bones-black dark:text-bones-whitesmoke'>
+						<p>by</p>
+						{book.authors.map((author, index) => (
+							<a
+								key={index}
+								href={author.url || '#'}
+								className='text-bones-blue dark:text-bones-lightsteelblue hover:underline'
+								target='_blank'
+								rel='noopener noreferrer'>
+								{author.name}
+							</a>
+						))}
+					</div>
+
+					<div className='flex flex-wrap gap-2'>
+						<span className='px-2 py-1 border rounded border-bones-black dark:border-bones-gainsboro'>
+							{book.metadata.genre}
+						</span>
+						<span className='px-2 py-1 border rounded border-bones-black dark:border-bones-gainsboro'>
+							{book.metadata.publishYear}
+						</span>
+						{book.metadata.pages && (
+							<span className='px-2 py-1 border rounded border-bones-black dark:border-bones-gainsboro'>
+								{book.metadata.pages} pages
+							</span>
+						)}
+					</div>
+
+					<div className='flex flex-wrap gap-4 font-medium text-bones-blue dark:text-bones-lightsteelblue'>
+						{links.map((link, index) => (
+							<a
+								key={index}
+								href={link.url}
+								target='_blank'
+								rel='noopener noreferrer'
+								className='hover:underline hover:text-bones-midnightblue dark:hover:text-bones-white'>
+								{link.label}
+							</a>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default BookCard;
-
