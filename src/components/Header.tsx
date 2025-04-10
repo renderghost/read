@@ -7,18 +7,19 @@ const Header: React.FC = () => {
 		<header>
 			<div className='flex flex-row w-full gap-32 px-16 py-48 bg-bones-linen dark:bg-bones-dimgray'>
 				<div className='flex flex-col items-start justify-between w-full space-y-6 md:w-1/2'>
-					<p className='italic font-bold text-black text-7xl'>
-						21 books that shaped how I think about design.
+					<p className='italic font-bold text-bones-black dark:text-bones-linen text-7xl'>
+						21 books that shaped how I think about my work as a
+						designer.
 					</p>
 					<div className='space-y-2'>
-						<p className='text-2xl font-black text-left text-black'>
+						<p className='text-2xl font-black text-left text-bones-black dark:text-bones-linen'>
 							by Barry Prendergast
 						</p>
 						<a
 							href='https://links.renderg.host'
 							target='_blank'
 							rel='noopener noreferrer'
-							className='text-base font-medium text-blue-600 hover:underline'>
+							className='text-base font-medium text-bones-blue dark:text-bones-yellow hover:underline'>
 							links.renderg.host
 						</a>
 					</div>
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
 								alt={`Cover of ${book.title}`}
 								width={68}
 								height={100}
-								className='object-cover w-full h-full'
+								className='object-cover w-full h-full border border-black/10'
 							/>
 						</div>
 					))}

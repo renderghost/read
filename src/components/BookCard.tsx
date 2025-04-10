@@ -18,7 +18,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 		<div className='flex flex-col items-start justify-start w-full gap-16 p-16 md:flex-row bg-bones-white dark:bg-bones-dimgray'>
 			{/* ——— */}
 			{/* Image */}
-			<div className='flex-shrink-0 w-full md:w-80 h-[500px] rounded relative p-1 ring-1 ring-bones-gainsboro dark:ring-bones-dimgray'>
+			<div className='flex-shrink-0 w-full md:w-80 h-[500px] rounded relative p-1 ring-1 ring-bones-linen dark:ring-bones-dimgray'>
 				<Image
 					src={book.coverImage}
 					alt={`Cover of ${book.title}`}
@@ -36,50 +36,55 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 					</blockquote>
 				</div>
 
-				<div className='flex flex-col gap-4'>
-					<p className='text-2xl font-black text-left text-bones-black dark:text-bones-linen'>
-						{book.title}
-					</p>
-
-					<div className='flex flex-wrap gap-2 text-base font-medium text-bones-black dark:text-bones-linen'>
-						<p>by</p>
-						{book.authors.map((author, index) => (
-							<a
-								key={index}
-								href={author.url || '#'}
-								className='text-bones-blue dark:text-bones-lightsteelblue hover:underline'
-								target='_blank'
-								rel='noopener noreferrer'>
-								{author.name}
-							</a>
-						))}
+				<div className='flex flex-col gap-4 py-8'>
+					<div className='flex flex-col gap-1'>
+						<h2 className='text-3xl font-extrabold italic text-bones-black dark:text-bones-linen'>
+							{book.title}
+						</h2>
+						<div className='flex flex-wrap gap-2 text-base font-medium text-bones-black dark:text-bones-linen'>
+							<p>by</p>
+							{book.authors.map((author, index) => (
+								<a
+									key={index}
+									href={author.url || '#'}
+									className='text-bones-blue dark:text-bones-yellow hover:underline'
+									target='_blank'
+									rel='noopener noreferrer'>
+									{author.name}
+								</a>
+							))}
+						</div>
 					</div>
-
-					<div className='flex flex-wrap gap-2'>
-						<span className='px-2 py-1 rounded bg-bones-linen'>
-							{book.metadata.genre}
-						</span>
-						<span className='px-2 py-1 rounded bg-bones-linen'>
-							{book.metadata.publishYear}
-						</span>
-						{book.metadata.pages && (
-							<span className='px-2 py-1 rounded bg-bones-linen'>
-								{book.metadata.pages} pages
+					<div className='flex flex-col gap-2'>
+						<div className='flex flex-wrap gap-2'>
+							<span className='px-2 py-1 rounded bg-bones-linen dark:bg-bones-black text-bones-black dark:text-bones-linen'>
+								{book.metadata.publisher}
 							</span>
-						)}
-					</div>
+							<span className='px-2 py-1 rounded bg-bones-linen dark:bg-bones-black text-bones-black dark:text-bones-linen'>
+								{book.metadata.publishYear}
+							</span>
+							<span className='px-2 py-1 rounded bg-bones-linen dark:bg-bones-black text-bones-black dark:text-bones-linen'>
+								{book.metadata.genre}
+							</span>
 
-					<div className='flex flex-wrap gap-4 font-medium text-bones-blue dark:text-bones-lightsteelblue'>
-						{links.map((link, index) => (
-							<a
-								key={index}
-								href={link.url}
-								target='_blank'
-								rel='noopener noreferrer'
-								className='hover:underline hover:text-bones-midnightblue dark:hover:text-bones-white'>
-								{link.label}
-							</a>
-						))}
+							{/* {book.metadata.pages && (
+								<span className='px-2 py-1 rounded bg-bones-linen dark:bg-bones-black text-bones-black dark:text-bones-linen'>
+									{book.metadata.pages} pages
+								</span>
+							)} */}
+						</div>
+						<div className='flex flex-wrap gap-8 font-medium text-bones-blue dark:text-bones-lightsteelblue'>
+							{links.map((link, index) => (
+								<a
+									key={index}
+									href={link.url}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='text-bones-blue dark:text-bones-yellow hover:underline'>
+									{link.label}
+								</a>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
