@@ -31,17 +31,17 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 			{/* Content */}
 			<div className='flex flex-col items-start self-stretch justify-between flex-1'>
 				<div className='py-8'>
-					<blockquote className='font-bold text-left text-8xl text-bones-black dark:text-bones-whitesmoke md:text-5xl'>
+					<blockquote className='font-bold text-left text-8xl text-bones-black dark:text-bones-snow md:text-5xl'>
 						{book.personalComment}
 					</blockquote>
 				</div>
 
 				<div className='flex flex-col gap-4'>
-					<p className='text-2xl font-black text-left text-bones-black dark:text-bones-whitesmoke'>
+					<p className='text-2xl font-black text-left text-bones-black dark:text-bones-snow'>
 						{book.title}
 					</p>
 
-					<div className='flex flex-wrap gap-2 text-base font-medium text-bones-black dark:text-bones-whitesmoke'>
+					<div className='flex flex-wrap gap-2 text-base font-medium text-bones-black dark:text-bones-snow'>
 						<p>by</p>
 						{book.authors.map((author, index) => (
 							<a
