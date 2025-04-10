@@ -7,9 +7,8 @@ const Header: React.FC = () => {
 		<header>
 			<div className='flex flex-row w-full gap-32 px-16 py-48 bg-bones-linen dark:bg-bones-dimgray'>
 				<div className='flex flex-col items-start justify-between w-full space-y-6 md:w-1/2'>
-					<p className='italic font-bold text-bones-black dark:text-bones-linen text-7xl'>
-						21 books that shaped how I think about my work as a
-						designer.
+					<p className='italic font-black text-bones-black dark:text-bones-linen text-7xl'>
+						21 books to re-shape how you think about great design.
 					</p>
 					<div className='space-y-2'>
 						<p className='text-2xl font-black text-left text-bones-black dark:text-bones-linen'>

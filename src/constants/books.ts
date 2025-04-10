@@ -46,7 +46,7 @@ export const books: Book[] = [
 		amazonUrl: `https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719`,
 	},
 	{
-		title: 'The End of the World Is Just the Beginning: Mapping the Collapse of Globalisation',
+		title: 'The End of the World Is Just the Beginning',
 		authors: [
 			{
 				name: 'Peter Zeihan',
@@ -61,7 +61,7 @@ export const books: Book[] = [
 			publisher: 'Harper Business',
 		},
 		personalComment:
-			'A profound analysis of geopolitical history and the tidal forces of the global economy: Zeihan provides an overview of the interdependencies and long time periods observed in complex capitalist systems.',
+			'An analysis of geopolitics, history and economics that describe of how relationsips, behaviours, and long timespans affect complex systems.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
 		amazonUrl:
