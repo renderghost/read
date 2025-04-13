@@ -9,16 +9,16 @@ export default function Home() {
 			{/* Content section - grows to fill available space */}
 			<div className='flex-grow grid grid-cols-1 lg:grid-cols-12 w-full h-full'>
 				{/* Header - full width on mobile, 4 columns on md+ screens */}
-				<header className='bones-page-header col-span-full lg:col-span-4 h-full'>
-					<Header />
-				</header>
+				<Header />
 
 				{/* Main content with BookGrid - full width on mobile, 8 columns on lg+ screens */}
-				<main className='bones-page-main col-span-full lg:col-span-8 h-full p-4 lg:p-8 bg-bones-white dark:bg-bones-darkgray'>
-					<Suspense
-						fallback={<BookGridSkeleton className='h-full' />}>
-						<BookGrid className='h-full' />
-					</Suspense>
+				<main className='bones-page-main col-span-full lg:col-span-8 min-h-[60vh] p-4 lg:p-8 bg-bones-linen dark:bg-bones-darkgray flex'>
+					<div className='flex flex-col justify-center flex-grow'>
+						<Suspense
+							fallback={<BookGridSkeleton className='h-full' />}>
+							<BookGrid className='h-auto' />
+						</Suspense>
+					</div>
 				</main>
 			</div>
 

@@ -6,15 +6,22 @@ export interface Book {
 	}[];
 	coverImage: string;
 	metadata: {
-		publishYear: number;
+		blurb?: string;
 		genre: string;
 		pages?: number;
 		publisher?: string;
+		publishYear: number;
+	};
+	// Optional external links
+	link: {
+		amazon?: string;
+		goodreads?: string;
+		home?: string;
+		wikipedia?: string;
+	};
+	quote?: {
+		attribute?: string;
+		text?: string;
 	};
 	personalComment: string;
-	// Optional external links
-	wikipediaUrl?: string;
-	goodreadsUrl?: string;
-	amazonUrl?: string;
-	homeUrl?: string;
 }
