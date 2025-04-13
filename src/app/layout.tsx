@@ -20,7 +20,7 @@ const dmSerifDisplay = DM_Serif_Display({
 
 // Metadata for the site
 export const metadata: Metadata = {
-	title: 'read | Book recommendations by Barry Prendergast.',
+	title: 'Read | Book recommendations by Barry Prendergast.',
 	description: '21 books to re-shape how you think about great design.',
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({
 		<html
 			lang='en'
 			className={`${dmSans.variable} ${dmSerifDisplay.variable}`}>
-			<body className='min-h-screen font-sans antialiased bg-bones-linen dark:bg-bones-black'>
+			<body className='grid grid-cols-1 grid-rows-[1fr_auto] min-h-screen font-sans antialiased bg-bones-linen dark:bg-bones-black'>
 				{children}
 			</body>
 		</html>
