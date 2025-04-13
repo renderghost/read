@@ -17,7 +17,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'Foundational toolkit for broadening design vocabulary with proven UI patterns: apply it to create stronger, more usable interactions.',
+			'A strong foundation for any interaction design vocabulary. This book is essential reading for anyone creating usable interfaces.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
 		amazonUrl:
@@ -39,7 +39,7 @@ export const books: Book[] = [
 			publisher: 'Chatto & Windus',
 		},
 		personalComment:
-			'Exploration of how perception shapes reality: leverage it to ground designs in genuine human experience.',
+			'A philosophical exploration of perception and consciousness, challenging our understanding of reality and the nature of experience.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
@@ -61,7 +61,7 @@ export const books: Book[] = [
 			publisher: 'Harper Business',
 		},
 		personalComment:
-			'An analysis of geopolitics, history and economics that describe of how relationsips, behaviours, and long timespans affect complex systems.',
+			'A state-of-the-union analysis of how demographics, economics, history, and politics shape our world. An essential primer in real-world complex adaptive systems.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
 		amazonUrl:
@@ -84,8 +84,9 @@ export const books: Book[] = [
 			pages: 288,
 			publisher: 'Verso Books',
 		},
-		personalComment:
-			'Forward-looking perspective on tech’s impact on labour transitions: consult it to envision equitable, post-work design solutions.',
+		personalComment: `
+			'An exploration of how mass automation out of the hands of corporate interests could lead to a more equitable society, challenging traditional economic structures.'
+		`,
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism',
 		amazonUrl: `https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624`,
@@ -107,7 +108,7 @@ export const books: Book[] = [
 			publisher: 'Basic Books',
 		},
 		personalComment:
-			'Study of recursive logic and interconnected creativity: draw on it to understand how related concepts drive complex design.',
+			'A passionate recursive work about systems and interconnectedness: a must-read for anyone interested in the intersection of art, science, and philosophy.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
 		goodreadsUrl: `https://www.goodreads.com/book/show/24113.G_del_Escher_Bach`,
 		amazonUrl: `https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567`,
@@ -128,7 +129,7 @@ export const books: Book[] = [
 			publisher: 'Penguin Classics',
 		},
 		personalComment:
-			'Allegorical take on bureaucracy and grand visions: reflect on it to recognise the communal cost behind ambitious undertakings.',
+			'An allegorical tale of bureaucracy and monumental visions, highlighting the communal costs of ambitious endeavours and the strategies necessary to be safe in that success.',
 		wikipediaUrl:
 			'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
 		amazonUrl: `https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083`,
@@ -145,7 +146,7 @@ export const books: Book[] = [
 			publisher: 'CreateSpace Independent Publishing Platform',
 		},
 		personalComment:
-			'Methoda for clarifying chaos: rely on it to systematically untangle the messy middle of challenging design tasks.',
+			'Powerful ways to explore ambiguity, systematically create clarity and order, and help others understand the world around them.',
 
 		homeUrl: 'https://www.howtomakesenseofanymess.com/',
 		amazonUrl: `https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994`,
@@ -166,8 +167,7 @@ export const books: Book[] = [
 			pages: 224,
 			publisher: 'New Riders',
 		},
-		personalComment:
-			'Approach to structuring websites and apps: use it to build clear hierarchies and guide intuitive navigation.',
+		personalComment: `A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.`,
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Information_architecture',
 		amazonUrl: `https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/224130.Information_Architecture`,
@@ -188,7 +188,7 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'Principles of straightforward data presentation: adopt them to ensure clarity and actionable insights over cleverness in visual data stories.',
+			'The key principles of straightforward data presentation that can ensure clarity and actionable insights, avoiding the temptation to be too clever.',
 		amazonUrl: `https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/3254937-information-dashboard-design`,
 	},
@@ -208,7 +208,7 @@ export const books: Book[] = [
 			publisher: 'Semantic Studios',
 		},
 		personalComment:
-			'Assertion that information is deeply interconnected: take it to heart when orchestrating design with the broadest contextual awareness.',
+			'A deep dive into the interconnectedness of data and design, exploring how information shapes our understanding of the world and the importance of designing for complexity.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Peter_Morville',
 		amazonUrl: `https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587`,
 		goodreadsUrl: `https://www.goodreads.com/book/show/22931460-intertwingled`,
@@ -230,7 +230,7 @@ export const books: Book[] = [
 			publisher: 'The MIT Press',
 		},
 		personalComment:
-			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with simple concepts.',
+			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with easy-to-grasp concepts.',
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
@@ -254,36 +254,36 @@ export const books: Book[] = [
 			publisher: 'The MIT Press',
 		},
 		personalComment:
-			'Exploration of how humans and machines think: informs design decisions shaped by and for working with evolving intelligence',
+			'A deep exploration of the philosophical implications of artificial intelligence, challenging our understanding of the differences between minds and machines.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/150696.Mind_Design_II',
 		amazonUrl:
 			'https://www.amazon.de/-/en/Mind-Design-Philosophy-Psychology-Intelligence/dp/0262581531',
 		homeUrl: `https://mitpress.mit.edu/9780262581530/mind-design-ii/`,
 	},
-	{
-		title: 'Non-Fiction',
-		authors: [
-			{
-				name: 'Chuck Palahniuk',
-				url: 'https://www.chuckpalahniuk.net/',
-			},
-		],
-		coverImage: '/books/palahniuk.jpg',
-		metadata: {
-			publishYear: 2004,
-			genre: 'Essays',
-			pages: 256,
-			publisher: 'Jonathan Cape',
-		},
-		personalComment:
-			'Reminded me that good storytelling (and the humans those stories are about) is raw, weird, and true—exactly what design needs more of.',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/24820339-non-fiction',
-		amazonUrl: 'https://www.amazon.de/-/en/Palahniuk-Chuck/dp/0224063022',
-		homeUrl: `https://www.penguin.co.uk/books/357251/non-fiction-by-chuck-palahniuk/9780099437970`,
-		wikipediaUrl: `https://en.wikipedia.org/wiki/Stranger_than_Fiction:_True_Stories`,
-	},
+	// {
+	// 	title: 'Non-Fiction',
+	// 	authors: [
+	// 		{
+	// 			name: 'Chuck Palahniuk',
+	// 			url: 'https://www.chuckpalahniuk.net/',
+	// 		},
+	// 	],
+	// 	coverImage: '/books/palahniuk.jpg',
+	// 	metadata: {
+	// 		publishYear: 2004,
+	// 		genre: 'Essays',
+	// 		pages: 256,
+	// 		publisher: 'Jonathan Cape',
+	// 	},
+	// 	personalComment:
+	// 		'Reminded me that good storytelling (and the humans those stories are about) is raw, weird, and true—exactly what design needs more of.',
+	// 	goodreadsUrl:
+	// 		'https://www.goodreads.com/book/show/24820339-non-fiction',
+	// 	amazonUrl: 'https://www.amazon.de/-/en/Palahniuk-Chuck/dp/0224063022',
+	// 	homeUrl: `https://www.penguin.co.uk/books/357251/non-fiction-by-chuck-palahniuk/9780099437970`,
+	// 	wikipediaUrl: `https://en.wikipedia.org/wiki/Stranger_than_Fiction:_True_Stories`,
+	// },
 
 	{
 		title: 'The Sciences of the Artificial',
@@ -300,8 +300,7 @@ export const books: Book[] = [
 			pages: 216,
 			publisher: 'MIT Press',
 		},
-		personalComment:
-			'This seminal work reshaped my understanding of design as a science, emphasising the importance of considering both natural and artificial systems in problem-solving.',
+		personalComment: `A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.`,
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
 		amazonUrl:
@@ -328,8 +327,7 @@ export const books: Book[] = [
 			pages: 372,
 			publisher: 'Charivari Press & Blackwood Gallery',
 		},
-		personalComment:
-			'Expanded my idea of what constitutes "experience"—got me thinking about space, time, and interactions beyond screens.',
+		personalComment: `A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.`,
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/15755476-sound-by-artists',
 		amazonUrl:
@@ -351,8 +349,7 @@ export const books: Book[] = [
 			pages: 512,
 			publisher: 'Farrar, Straus and Giroux',
 		},
-		personalComment:
-			'Insights into biases and decision-making: apply them to design for how people truly think and act.',
+		personalComment: `A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.`,
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
@@ -374,8 +371,7 @@ export const books: Book[] = [
 			pages: 432,
 			publisher: 'TarcherPerigee',
 		},
-		personalComment:
-			'Focus on motivation and emotion: the book addresses deeper psychological needs in that can brought into a behaviour-driven design practice.',
+		personalComment: `A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.`,
 		goodreadsUrl: 'https://www.goodreads.com/book/show/49625550-transcend',
 		amazonUrl:
 			'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
@@ -397,7 +393,7 @@ export const books: Book[] = [
 			publisher: 'Graphics Press',
 		},
 		personalComment:
-			'The defining document for precise yet-aesthetic data visualisation: Tufte defines principles of clarity and integrity in presenting engaging information at more-clearly',
+			'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
 		goodreadsUrl:
 			'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
 		amazonUrl:
@@ -419,8 +415,7 @@ export const books: Book[] = [
 			pages: 166,
 			publisher: 'Penguin Books',
 		},
-		personalComment:
-			'A critical theoretical look at images, power, and culture: which informs how we can interpret and create interfaces with a deeper cultural and psychological awareness.',
+		personalComment: `A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.`,
 		wikipediaUrl: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
 		goodreadsUrl: 'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
 		amazonUrl:
