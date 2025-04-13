@@ -2,13 +2,13 @@ export interface Book {
 	title: string;
 	authors: {
 		name: string;
-		url?: string;
+		link?: string;
 	}[];
 	coverImage: string;
 	metadata: {
 		blurb?: string;
 		genre: string;
-		pages?: number;
+		pageCount?: number;
 		publisher?: string;
 		publishYear: number;
 	};

@@ -58,9 +58,9 @@ const BookGrid: React.FC<BookGridProps> = ({ className = '' }) => {
             w-full
             gap-1
             grid-cols-3
-            sm:grid-cols-4
-            md:grid-cols-5
-            lg:grid-cols-7
+            sm:grid-cols-5
+            md:grid-cols-6
+            lg:grid-cols-8
             max-w-7xl
             mx-auto
           '>
