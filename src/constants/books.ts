@@ -18,10 +18,15 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A strong foundation for any interaction design vocabulary. This book is essential reading for anyone creating usable interfaces.',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
-		amazonUrl:
-			'https://www.amazon.com/Designing-Interfaces-Patterns-Effective-Interaction/dp/1449379702',
+		quote: {
+			text: "UX designers have to constantly learn about human psychology, interaction design, information architecture and user research techniques, just to name a few, in order to create the right solutions to a user's problems.",
+			attribute: 'Jenifer Tidwell',
+		},
+		link: {
+			amazon: 'https://www.amazon.com/Designing-Interfaces-Patterns-Effective-Interaction/dp/1449379702',
+			goodreads:
+				'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
+		},
 	},
 	{
 		title: 'The Doors of Perception',
@@ -40,10 +45,16 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A philosophical exploration of perception and consciousness, challenging our understanding of reality and the nature of experience.',
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
-		amazonUrl: `https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719`,
+		quote: {
+			text: 'To see ourselves as others see us is a most salutary gift. Hardly less important is the capacity to see others as they see themselves.',
+			attribute: 'Aldous Huxley',
+		},
+		link: {
+			amazon: 'https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719',
+			goodreads:
+				'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
+			wikipedia: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
+		},
 	},
 	{
 		title: 'The End of the World Is Just the Beginning',
@@ -62,12 +73,17 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A state-of-the-union analysis of how demographics, economics, history, and politics shape our world. An essential primer in real-world complex adaptive systems.',
-		wikipediaUrl:
-			'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
-		amazonUrl:
-			'https://www.amazon.com/End-World-Just-Beginning-Globalization/dp/006323047X',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/58782897-the-end-of-the-world-is-just-the-beginning',
+		quote: {
+			text: 'Geography does not change. Demographics do not lie. And we have a historyful of history as to how countries and peoples react to their environment.',
+			attribute: 'Peter Zeihan',
+		},
+		link: {
+			amazon: 'https://www.amazon.com/End-World-Just-Beginning-Globalization/dp/006323047X',
+			goodreads:
+				'https://www.goodreads.com/book/show/58782897-the-end-of-the-world-is-just-the-beginning',
+			wikipedia:
+				'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
+		},
 	},
 	{
 		title: 'Fully Automated Luxury Communism: A Manifesto',
@@ -84,13 +100,19 @@ export const books: Book[] = [
 			pages: 288,
 			publisher: 'Verso Books',
 		},
-		personalComment: `
-			'An exploration of how mass automation out of the hands of corporate interests could lead to a more equitable society, challenging traditional economic structures.'
-		`,
-		wikipediaUrl:
-			'https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism',
-		amazonUrl: `https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/37758635-fully-automated-luxury-communism`,
+		personalComment:
+			'An exploration of how mass automation out of the hands of corporate interests could lead to a more equitable society, challenging traditional economic structures.',
+		quote: {
+			text: 'We have a world to win.',
+			attribute: 'Aaron Bastani',
+		},
+		link: {
+			amazon: 'https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624',
+			goodreads:
+				'https://www.goodreads.com/book/show/37758635-fully-automated-luxury-communism',
+			wikipedia:
+				'https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism',
+		},
 	},
 	{
 		title: 'Gödel, Escher, Bach: An Eternal Golden Braid',
@@ -109,9 +131,15 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A passionate recursive work about systems and interconnectedness: a must-read for anyone interested in the intersection of art, science, and philosophy.',
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
-		goodreadsUrl: `https://www.goodreads.com/book/show/24113.G_del_Escher_Bach`,
-		amazonUrl: `https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567`,
+		quote: {
+			text: 'The "Strange Loop" phenomenon occurs whenever, by moving upwards (or downwards) through levels of some hierarchical system, we unexpectedly find ourselves right back where we started.',
+			attribute: 'Douglas R. Hofstadter',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
+			goodreads: 'https://www.goodreads.com/book/show/24113.G_del_Escher_Bach',
+			amazon: 'https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567',
+		},
 	},
 	{
 		title: 'The Great Wall of China',
@@ -130,10 +158,15 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'An allegorical tale of bureaucracy and monumental visions, highlighting the communal costs of ambitious endeavours and the strategies necessary to be safe in that success.',
-		wikipediaUrl:
-			'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
-		amazonUrl: `https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/177576.The_Great_Wall_of_China_and_other_Stories`,
+		quote: {
+			text: '"Alas," said the mouse, "the whole world is growing smaller every day. At the beginning it was so big that I was afraid, I kept running and running, and I was glad when I saw walls far away to the right and left, but these long walls have narrowed so quickly that I am in the last chamber already, and there in the corner stands the trap that I am running into."',
+			attribute: 'Franz Kafka',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
+			amazon: 'https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083',
+			goodreads: 'https://www.goodreads.com/book/show/177576.The_Great_Wall_of_China_and_other_Stories',
+		},
 	},
 	{
 		title: 'How to Make Sense of Any Mess',
@@ -147,10 +180,15 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'Powerful ways to explore ambiguity, systematically create clarity and order, and help others understand the world around them.',
-
-		homeUrl: 'https://www.howtomakesenseofanymess.com/',
-		amazonUrl: `https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess`,
+		quote: {
+			text: 'Information architecture is the way that we arrange the parts of something to make it understandable.',
+			attribute: 'Abby Covert',
+		},
+		link: {
+			home: 'https://www.howtomakesenseofanymess.com/',
+			amazon: 'https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994',
+			goodreads: 'https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess',
+		},
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
@@ -167,10 +205,17 @@ export const books: Book[] = [
 			pages: 224,
 			publisher: 'New Riders',
 		},
-		personalComment: `A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.`,
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/Information_architecture',
-		amazonUrl: `https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/224130.Information_Architecture`,
+		personalComment:
+			'A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.',
+		quote: {
+			text: 'Information architecture is the art and science of structuring and organizing the information in products and services, supporting usability and findability.',
+			attribute: 'Christina Wodtke',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Information_architecture',
+			amazon: 'https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506',
+			goodreads: 'https://www.goodreads.com/book/show/224130.Information_Architecture',
+		},
 	},
 	{
 		title: 'Information Dashboard Design',
@@ -189,8 +234,14 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'The key principles of straightforward data presentation that can ensure clarity and actionable insights, avoiding the temptation to be too clever.',
-		amazonUrl: `https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/3254937-information-dashboard-design`,
+		quote: {
+			text: 'Dashboards are not reports; they are visual displays of the most important information needed to achieve one or more objectives.',
+			attribute: 'Stephen Few',
+		},
+		link: {
+			amazon: 'https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001',
+			goodreads: 'https://www.goodreads.com/book/show/3254937-information-dashboard-design',
+		},
 	},
 	{
 		title: 'Intertwingled: Information Changes Everything',
@@ -209,10 +260,16 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A deep dive into the interconnectedness of data and design, exploring how information shapes our understanding of the world and the importance of designing for complexity.',
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/Peter_Morville',
-		amazonUrl: `https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587`,
-		goodreadsUrl: `https://www.goodreads.com/book/show/22931460-intertwingled`,
-		homeUrl: `https://intertwingled.org/`,
+		quote: {
+			text: 'In the beginning was the word. But where do words begin? And where do they lead? Our expedition is fueled by questions.',
+			attribute: 'Peter Morville',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Peter_Morville',
+			amazon: 'https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587',
+			goodreads: 'https://www.goodreads.com/book/show/22931460-intertwingled',
+			home: 'https://intertwingled.org/',
+		},
 	},
 	{
 		title: 'The Laws of Simplicity',
@@ -231,12 +288,16 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with easy-to-grasp concepts.',
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Laws-Simplicity-Design-Technology-Business/dp/0262539470',
-		homeUrl: `http://lawsofsimplicity.com/`,
+		quote: {
+			text: 'Simplicity is about subtracting the obvious and adding the meaningful.',
+			attribute: 'John Maeda',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
+			goodreads: 'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
+			amazon: 'https://www.amazon.de/-/en/Laws-Simplicity-Design-Technology-Business/dp/0262539470',
+			home: 'http://lawsofsimplicity.com/',
+		},
 	},
 	{
 		title: 'Mind Design II: Philosophy, Psychology, and Artificial Intelligence',
@@ -255,36 +316,16 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'A deep exploration of the philosophical implications of artificial intelligence, challenging our understanding of the differences between minds and machines.',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/150696.Mind_Design_II',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Mind-Design-Philosophy-Psychology-Intelligence/dp/0262581531',
-		homeUrl: `https://mitpress.mit.edu/9780262581530/mind-design-ii/`,
+		quote: {
+			text: 'Minds are simply what brains do.',
+			attribute: 'John Haugeland',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/150696.Mind_Design_II',
+			amazon: 'https://www.amazon.de/-/en/Mind-Design-Philosophy-Psychology-Intelligence/dp/0262581531',
+			home: 'https://mitpress.mit.edu/9780262581530/mind-design-ii/',
+		},
 	},
-	// {
-	// 	title: 'Non-Fiction',
-	// 	authors: [
-	// 		{
-	// 			name: 'Chuck Palahniuk',
-	// 			url: 'https://www.chuckpalahniuk.net/',
-	// 		},
-	// 	],
-	// 	coverImage: '/books/palahniuk.jpg',
-	// 	metadata: {
-	// 		publishYear: 2004,
-	// 		genre: 'Essays',
-	// 		pages: 256,
-	// 		publisher: 'Jonathan Cape',
-	// 	},
-	// 	personalComment:
-	// 		'Reminded me that good storytelling (and the humans those stories are about) is raw, weird, and true—exactly what design needs more of.',
-	// 	goodreadsUrl:
-	// 		'https://www.goodreads.com/book/show/24820339-non-fiction',
-	// 	amazonUrl: 'https://www.amazon.de/-/en/Palahniuk-Chuck/dp/0224063022',
-	// 	homeUrl: `https://www.penguin.co.uk/books/357251/non-fiction-by-chuck-palahniuk/9780099437970`,
-	// 	wikipediaUrl: `https://en.wikipedia.org/wiki/Stranger_than_Fiction:_True_Stories`,
-	// },
-
 	{
 		title: 'The Sciences of the Artificial',
 		authors: [
@@ -300,13 +341,16 @@ export const books: Book[] = [
 			pages: 216,
 			publisher: 'MIT Press',
 		},
-		personalComment: `A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.`,
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
-		amazonUrl:
-			'https://www.amazon.com/Sciences-Artificial-Herbert-A-Simon/dp/0262691914',
-		homeUrl:
-			'https://mitpress.mit.edu/9780262691913/the-sciences-of-the-artificial/',
+		personalComment: 'A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.',
+		quote: {
+			text: 'Everyone designs who devises courses of action aimed at changing existing situations into preferred ones.',
+			attribute: 'Herbert A. Simon',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
+			amazon: 'https://www.amazon.com/Sciences-Artificial-Herbert-A-Simon/dp/0262691914',
+			home: 'https://mitpress.mit.edu/9780262691913/the-sciences-of-the-artificial/',
+		},
 	},
 	{
 		title: 'Sound by Artists',
@@ -327,12 +371,16 @@ export const books: Book[] = [
 			pages: 372,
 			publisher: 'Charivari Press & Blackwood Gallery',
 		},
-		personalComment: `A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.`,
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/15755476-sound-by-artists',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Sound-Artists-Dan-Lander/dp/1895166284',
-		homeUrl: `https://www.blackwoodgallery.ca/publications/sound-by-artists`,
+		personalComment: 'A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.',
+		quote: {
+			text: 'Sound art is situated between categories, between seeing and hearing, between time-based media and object-based media.',
+			attribute: 'Dan Lander',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/15755476-sound-by-artists',
+			amazon: 'https://www.amazon.de/-/en/Sound-Artists-Dan-Lander/dp/1895166284',
+			home: 'https://www.blackwoodgallery.ca/publications/sound-by-artists',
+		},
 	},
 	{
 		title: 'Thinking, Fast and Slow',
@@ -349,12 +397,16 @@ export const books: Book[] = [
 			pages: 512,
 			publisher: 'Farrar, Straus and Giroux',
 		},
-		personalComment: `A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.`,
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
+		personalComment: 'A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.',
+		quote: {
+			text: 'A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth.',
+			attribute: 'Daniel Kahneman',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
+			goodreads: 'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
+			amazon: 'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
+		},
 	},
 	{
 		title: 'Transcend: The New Science of Self-Actualisation',
@@ -371,11 +423,16 @@ export const books: Book[] = [
 			pages: 432,
 			publisher: 'TarcherPerigee',
 		},
-		personalComment: `A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.`,
-		goodreadsUrl: 'https://www.goodreads.com/book/show/49625550-transcend',
-		amazonUrl:
-			'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
-		homeUrl: `https://scottbarrykaufman.com/podcast/transcend-with-scott-barry-kaufman/`,
+		personalComment: 'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
+		quote: {
+			text: 'Growth is a messy, nonlinear process.',
+			attribute: 'Scott Barry Kaufman',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/49625550-transcend',
+			amazon: 'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
+			home: 'https://scottbarrykaufman.com/podcast/transcend-with-scott-barry-kaufman/',
+		},
 	},
 	{
 		title: 'The Visual Display of Quantitative Information',
@@ -394,11 +451,15 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Visual-Display-Quantitative-Information/dp/1930824130',
-		homeUrl: `https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/`,
+		quote: {
+			text: 'Excellence in statistical graphics consists of complex ideas communicated with clarity, precision, and efficiency.',
+			attribute: 'Edward R. Tufte',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
+			amazon: 'https://www.amazon.de/-/en/Visual-Display-Quantitative-Information/dp/1930824130',
+			home: 'https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/',
+		},
 	},
 	{
 		title: 'Ways of Seeing',
@@ -415,11 +476,16 @@ export const books: Book[] = [
 			pages: 166,
 			publisher: 'Penguin Books',
 		},
-		personalComment: `A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.`,
-		wikipediaUrl: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
-		goodreadsUrl: 'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
-		amazonUrl:
-			'https://www.amazon.de/-/en/Ways-Seeing-Berger-Penguin-Classics/dp/014103579X',
+		personalComment: 'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
+		quote: {
+			text: 'The way we see things is affected by what we know or what we believe.',
+			attribute: 'John Berger',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
+			goodreads: 'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
+			amazon: 'https://www.amazon.de/-/en/Ways-Seeing-Berger-Penguin-Classics/dp/014103579X',
+		},
 	},
 	{
 		title: 'What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley',
@@ -436,17 +502,19 @@ export const books: Book[] = [
 			pages: 160,
 			publisher: 'Farrar, Straus and Giroux',
 		},
-		personalComment:
-			"Provides a critical examination of Silicon Valley's ideologies, prompting reflection on the tech industry's influence on society.",
-
-		goodreadsUrl:
-			'https://www.goodreads.com/book/show/50403471-what-tech-calls-thinking',
-		amazonUrl:
-			'https://www.amazon.com/What-Tech-Calls-Thinking-Intellectual-ebook/dp/B084M1NCF7',
-		homeUrl: `https://www.adriandaub.com/books/what-tech-calls`,
+		personalComment: 'Provides a critical examination of Silicon Valley\'s ideologies, prompting reflection on the tech industry\'s influence on society.',
+		quote: {
+			text: 'Silicon Valley\'s rhetoric often starts by invoking the future to better dismiss the claims of the present.',
+			attribute: 'Adrian Daub',
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/50403471-what-tech-calls-thinking',
+			amazon: 'https://www.amazon.com/What-Tech-Calls-Thinking-Intellectual-ebook/dp/B084M1NCF7',
+			home: 'https://www.adriandaub.com/books/what-tech-calls',
+		},
 	},
 	{
-		title: 'The Whole Internet: User’s Guide and Catalog',
+		title: "The Whole Internet: User's Guide and Catalog",
 		authors: [
 			{
 				name: 'Ed Krol',
@@ -461,12 +529,15 @@ export const books: Book[] = [
 			publisher: "O'Reilly Media",
 		},
 		personalComment:
-			'A time capsule of the web’s early spirit that reminds me of the openness, curiosity, and DIY spirit of the early internet',
-		wikipediaUrl:
-			'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
-		goodreadsUrl: 'https://www.goodreads.com/book/show/2954315',
-		amazonUrl:
-			'https://www.amazon.com/Whole-Internet-Catalog-Nutshell-Handbook/dp/1565920252',
+			'A time capsule of the web\'s early spirit that reminds me of the openness, curiosity, and DIY spirit of the early internet',
+		quote: {
+			text: 'The Internet connects thousands of computer networks around the world. The fact that all these networks can talk to each other is a marvel of modern technology.',
+			attribute: 'Ed Krol',
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
+			goodreads: 'https://www.goodreads.com/book/show/2954315',
+			amazon: 'https://www.amazon.com/Whole-Internet-Catalog-Nutshell-Handbook/dp/1565920252',
+		},
 	},
-	// Add more books here...
 ];
