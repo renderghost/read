@@ -16,7 +16,7 @@ A personal book collection showcase built with Next.js 15.3, TypeScript, and Tai
 - **Language**: TypeScript
 - **UI Library**: React 19
 - **Styling**: Tailwind CSS 3.4
-- **Development**: 
+- **Development**:
   - Turbopack for fast development builds
   - ESLint for code quality
   - Prettier for consistent formatting
@@ -32,7 +32,7 @@ read/
 │   │   ├── layout.tsx  # Root layout component
 │   │   └── page.tsx    # Home page component
 │   ├── components/     # Reusable components
-│   │   ├── BookCard.tsx
+│   │   ├── Book.tsx
 │   │   ├── BookList.tsx
 │   │   ├── Footer.tsx
 │   │   ├── Header.tsx

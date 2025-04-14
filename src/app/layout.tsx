@@ -21,7 +21,7 @@ const dmSerifDisplay = DM_Serif_Display({
 // Metadata for the site
 export const metadata: Metadata = {
 	title: 'Read | Book recommendations by Barry Prendergast.',
-	description: '21 books to re-shape how you think about great design.',
+	description: '24 books to re-shape how you think about great design.',
 };
 
 // Root layout component with TypeScript typing
