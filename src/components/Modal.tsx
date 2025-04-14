@@ -3,94 +3,85 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Book } from '@/types/Book';
-import BookCard from './BookCard';
+import BookDetail from './BookDetail';
+import { books } from '@/constants/books';
+import { X } from 'lucide-react';
 
 interface ModalProps {
 	book: Book | null;
 	onClose: () => void;
 	isOpen: boolean;
+	onBookChange?: (book: Book) => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ book, onClose, isOpen }) => {
+const Modal: React.FC<ModalProps> = ({
+	book,
+	onClose,
+	isOpen,
+	onBookChange,
+}) => {
 	const modalRef = useRef<HTMLDivElement>(null);
 	const closeButtonRef = useRef<HTMLButtonElement>(null);
 	const contentRef = useRef<HTMLDivElement>(null);
 
-	// Handle ESC key press
+	const currentIndex = book
+		? books.findIndex(b => b.title === book.title)
+		: -1;
+	const previousBook = currentIndex > 0 ? books[currentIndex - 1] : undefined;
+	const nextBook =
+		currentIndex < books.length - 1 ? books[currentIndex + 1] : undefined;
+
+	const handlePrevious = () => {
+		if (previousBook && onBookChange) onBookChange(previousBook);
+	};
+
+	const handleNext = () => {
+		if (nextBook && onBookChange) onBookChange(nextBook);
+	};
+
 	useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent) => {
-			if (event.key === 'Escape' && isOpen) {
-				onClose();
-			}
+			if (event.key === 'Escape' && isOpen) onClose();
 		};
-
 		document.addEventListener('keydown', handleKeyDown);
-		return () => {
-			document.removeEventListener('keydown', handleKeyDown);
-		};
+		return () => document.removeEventListener('keydown', handleKeyDown);
 	}, [isOpen, onClose]);
 
-	// Focus management
 	useEffect(() => {
 		if (isOpen) {
-			// Save the current active element to restore focus later
 			const previousActiveElement = document.activeElement as HTMLElement;
+			if (closeButtonRef.current) closeButtonRef.current.focus();
 
-			// Focus the close button when modal opens
-			if (closeButtonRef.current) {
-				closeButtonRef.current.focus();
-			}
-
-			// Create focus trap
 			const handleFocusTrap = (event: KeyboardEvent) => {
 				if (event.key === 'Tab' && modalRef.current) {
-					const focusableElements = modalRef.current.querySelectorAll(
+					const focusable = modalRef.current.querySelectorAll(
 						'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
 					);
-
-					const firstElement = focusableElements[0] as HTMLElement;
-					const lastElement = focusableElements[
-						focusableElements.length - 1
-					] as HTMLElement;
-
-					// If shift + tab and focus is on first element, move to last element
-					if (
-						event.shiftKey &&
-						document.activeElement === firstElement
-					) {
+					const first = focusable[0] as HTMLElement;
+					const last = focusable[focusable.length - 1] as HTMLElement;
+					if (event.shiftKey && document.activeElement === first) {
 						event.preventDefault();
-						lastElement.focus();
-					}
-					// If tab and focus is on last element, move to first element
-					else if (
+						last.focus();
+					} else if (
 						!event.shiftKey &&
-						document.activeElement === lastElement
+						document.activeElement === last
 					) {
 						event.preventDefault();
-						firstElement.focus();
+						first.focus();
 					}
 				}
 			};
 
 			document.addEventListener('keydown', handleFocusTrap);
-
-			// Restore focus when component unmounts
 			return () => {
 				document.removeEventListener('keydown', handleFocusTrap);
-				if (previousActiveElement) {
-					previousActiveElement.focus();
-				}
+				if (previousActiveElement) previousActiveElement.focus();
 			};
 		}
 	}, [isOpen]);
 
-	// Body scroll lock
 	useEffect(() => {
-		if (isOpen) {
-			document.body.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = '';
-		}
+		document.body.style.overflow = isOpen ? 'hidden' : '';
 		return () => {
 			document.body.style.overflow = '';
 		};
@@ -110,11 +101,7 @@ const Modal: React.FC<ModalProps> = ({ book, onClose, isOpen }) => {
 					role='dialog'
 					aria-modal='true'
 					aria-labelledby='modal-title'
-					onClick={e => {
-						if (e.target === e.currentTarget) {
-							onClose();
-						}
-					}}
+					onClick={e => e.target === e.currentTarget && onClose()}
 					ref={modalRef}>
 					<motion.div
 						initial={{ scale: 0.9, y: 20 }}
@@ -126,34 +113,85 @@ const Modal: React.FC<ModalProps> = ({ book, onClose, isOpen }) => {
 							stiffness: 200,
 							damping: 25,
 						}}
-						className='relative w-screen h-screen overflow-y-auto bg-bones-white dark:bg-bones-dimgray'
+						className='grid grid-rows-[auto_1fr_auto] w-screen h-screen bg-bones-white dark:bg-bones-dimgray overflow-hidden'
 						ref={contentRef}>
-						<button
-							ref={closeButtonRef}
-							onClick={onClose}
-							className='absolute top-4 right-4 p-2 rounded-full bg-bones-linen dark:bg-bones-slategray text-bones-black dark:text-bones-linen hover:bg-bones-gainsboro dark:hover:bg-bones-black transition-colors z-10'
-							aria-label='Close modal'>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								width='24'
-								height='24'
-								viewBox='0 0 24 24'
-								fill='none'
-								stroke='currentColor'
-								strokeWidth='2'
-								strokeLinecap='round'
-								strokeLinejoin='round'>
-								<line x1='18' y1='6' x2='6' y2='18'></line>
-								<line x1='6' y1='6' x2='18' y2='18'></line>
-							</svg>
-						</button>
+						{/* Header */}
+						<div className='flex justify-between items-center p-4 border-b border-bones-black dark:border-bones-linen'>
+							<div className='flex items-center gap-4'>
+								<h2
+									id='modal-title'
+									className='text-2xl font-black text-bones-black dark:text-bones-linen'>
+									{book.title} by{' '}
+									{book.authors.map((author, index) => (
+										<React.Fragment key={index}>
+											{author.link ? (
+												<a
+													href={author.link}
+													target='_blank'
+													rel='noopener noreferrer'
+													className='text-bones-blue dark:text-bones-gold hover:underline'>
+													{author.name}
+												</a>
+											) : (
+												<span>{author.name}</span>
+											)}
+											{index < book.authors.length - 1 &&
+												', '}
+										</React.Fragment>
+									))}
+								</h2>
+								<span className='px-2 py-1 rounded border border-bones-black dark:border-bones-linen text-bones-black dark:text-bones-linen text-sm font-medium'>
+									{book.metadata.genre}
+								</span>
+							</div>
 
-						<div id='modal-title' className='sr-only'>
-							{book.title}
+							<button
+								ref={closeButtonRef}
+								onClick={onClose}
+								className='p-2 rounded-full bg-bones-linen dark:bg-bones-slategray text-bones-black dark:text-bones-linen hover:bg-bones-gainsboro dark:hover:bg-bones-black transition-colors'>
+								<X className='w-5 h-5' />
+							</button>
 						</div>
 
-						<div className='p-4 md:p-6'>
-							<BookCard book={book} />
+						{/* Content */}
+						<div className='overflow-y-auto'>
+							<BookDetail book={book} />
+						</div>
+
+						{/* Pager */}
+						<div className='flex justify-between gap-0 border-t border-bones-black dark:border-bones-linen'>
+							<button
+								onClick={handlePrevious}
+								disabled={!previousBook}
+								aria-disabled={!previousBook}
+								className={`flex flex-col flex-grow w-full items-start p-4 bg-bones-white hover:bg-bones-linen  ${
+									!previousBook
+										? 'opacity-50 cursor-not-allowed'
+										: 'hover:bg-bones-transparent'
+								}`}>
+								<span className='text-lg font-black text-bones-blue dark:text-bones-gold'>
+									{previousBook?.title || 'Start of list'}
+								</span>
+								<span className='text-sm font-medium text-bones-black dark:text-bones-linen'>
+									PREV
+								</span>
+							</button>
+							<button
+								onClick={handleNext}
+								disabled={!nextBook}
+								aria-disabled={!nextBook}
+								className={`flex flex-col flex-grow w-full items-end p-4 bg-bones-white hover:bg-bones-linen  ${
+									!nextBook
+										? 'opacity-50 cursor-not-allowed'
+										: 'hover:bg-bones-transparent'
+								}`}>
+								<span className='text-lg font-black text-bones-blue dark:text-bones-gold'>
+									{nextBook?.title || 'End of list'}
+								</span>
+								<span className='text-sm font-medium text-bones-black dark:text-bones-linen'>
+									NEXT
+								</span>
+							</button>
 						</div>
 					</motion.div>
 				</motion.div>

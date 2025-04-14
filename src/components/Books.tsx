@@ -8,11 +8,11 @@ import { books } from '@/constants/books';
 import { Book } from '@/types/Book';
 import Modal from './Modal';
 
-interface BookGridProps {
+interface BooksProps {
 	className?: string;
 }
 
-const BookGrid: React.FC<BookGridProps> = ({ className = '' }) => {
+const Books: React.FC<BooksProps> = ({ className = '' }) => {
 	const router = useRouter();
 	const searchParams = useSearchParams();
 	const [selectedBook, setSelectedBook] = useState<Book | null>(null);
@@ -98,13 +98,20 @@ const BookGrid: React.FC<BookGridProps> = ({ className = '' }) => {
 				book={selectedBook}
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
+				onBookChange={(book: Book) => {
+					const bookSlug = book.title
+						.toLowerCase()
+						.replace(/\s+/g, '-');
+					router.push(`/?book=${bookSlug}`);
+					setSelectedBook(book);
+				}}
 			/>
 		</>
 	);
 };
 
-// Loading skeleton for the BookGrid component
-export const BookGridSkeleton: React.FC<{ className?: string }> = ({
+// Loading skeleton for the Books component
+export const BooksSkeleton: React.FC<{ className?: string }> = ({
 	className = '',
 }) => (
 	<div className={`bones-book-grid-skeleton flex-grow ${className}`}>
@@ -120,4 +127,4 @@ export const BookGridSkeleton: React.FC<{ className?: string }> = ({
 	</div>
 );
 
-export default BookGrid;
+export default Books;

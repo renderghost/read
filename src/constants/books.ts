@@ -141,431 +141,479 @@ export const books: Book[] = [
 			wikipedia:
 				'https://en.wikipedia.org/wiki/Fully_Automated_Luxury_Communism',
 		},
+		quote: {
+			attribute: 'Aaron Bastani',
+			text: 'We have a world to win.',
+		},
+		personalComment:
+			'Bastani urges readers to consider how technology and automation can serve collective well-being, rather than merely drive private profit, prompting bold thinking about structural reform.\n\nFrom a design standpoint, this mindset encourages imagining systems that place people’s welfare first. Designers who see themselves as changemakers can glean insights into building social equity directly into their innovations.\n\nUltimately, the text challenges conventional economic assumptions. It inspires socially responsible, future-focused design solutions that aim for a balanced, inclusive society where automation works for all.',
 	},
 	{
 		title: 'Gödel, Escher, Bach: An Eternal Golden Braid',
 		authors: [
 			{
 				name: 'Douglas R. Hofstadter',
-				url: 'https://en.wikipedia.org/wiki/Douglas_Hofstadter',
+				link: 'https://en.wikipedia.org/wiki/Douglas_Hofstadter',
 			},
 		],
 		coverImage: '/books/hofstadter.jpg',
 		metadata: {
-			publishYear: 1979,
+			blurb: 'A captivating exploration of recursion, artificial intelligence, and the nature of consciousness, weaving themes from music, mathematics, and art to reveal the common threads underlying complex systems.',
 			genre: 'Cognitive Science',
-			pages: 777,
+			pageCount: 777,
 			publisher: 'Basic Books',
-		},
-		personalComment:
-			'A passionate recursive work about systems and interconnectedness: a must-read for anyone interested in the intersection of art, science, and philosophy.',
-		quote: {
-			text: 'The "Strange Loop" phenomenon occurs whenever, by moving upwards (or downwards) through levels of some hierarchical system, we unexpectedly find ourselves right back where we started.',
-			attribute: 'Douglas R. Hofstadter',
+			publishYear: 1979,
 		},
 		link: {
 			wikipedia: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
-			goodreads: 'https://www.goodreads.com/book/show/24113.G_del_Escher_Bach',
+			goodreads:
+				'https://www.goodreads.com/book/show/24113.G_del_Escher_Bach',
 			amazon: 'https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567',
 		},
+		quote: {
+			attribute: 'Douglas R. Hofstadter',
+			text: 'The "Strange Loop" phenomenon occurs whenever, by moving upwards (or downwards) through levels of some hierarchical system, we unexpectedly find ourselves right back where we started.',
+		},
+		personalComment:
+			'Hofstadter’s work exemplifies how patterns and structures underpin intelligence, offering lessons that stretch across disciplines. This awareness can sharpen a designer’s ability to detect deeper system-level insights.\n\nBy dissecting self-reference and playful logic, it prompts you to question normal boundaries between art, science, and philosophy—an openness that feeds a more holistic approach to designing for complex needs.\n\nUltimately, the text spurs curiosity about how we perceive and shape experiences. This mindset allows UX practitioners to craft not just functional interfaces, but meaningful interactions that acknowledge interconnected layers of design, society, and technology.',
 	},
 	{
 		title: 'The Great Wall of China',
 		authors: [
 			{
 				name: 'Franz Kafka',
-				url: 'https://en.wikipedia.org/wiki/Franz_Kafka',
+				link: 'https://en.wikipedia.org/wiki/Franz_Kafka',
 			},
 		],
 		coverImage: '/books/kafka.jpg',
 		metadata: {
+			blurb: 'A short allegory that examines ambition, bureaucracy, and the human desire for grand achievement through the lens of an enormous construction project.',
+			genre: 'Short Story',
+			pageCount: 256,
+			publisher: 'Penguin',
 			publishYear: 1931,
-			genre: 'Short Stories',
-			pages: 256,
-			publisher: 'Penguin Classics',
 		},
 		personalComment:
-			'An allegorical tale of bureaucracy and monumental visions, highlighting the communal costs of ambitious endeavours and the strategies necessary to be safe in that success.',
+			'Kafka’s short story about the construction of the Great Wall of China reveals how human efforts, no matter how monumental, can be both enabled and restricted by rigid systems and hierarchies. Visions of monumental change often masks the small, crucial details that define success or failure.\n\nBy reflecting on how those in power shape ambition, it prompts us to consider the ethical complexities in everything we build and facilitate with our labour. In design, paying attention to both lofty visions and the actual, day-to-day realities faced by end users in their real lives is vital.\n\nThis narrative highlights the tension between grand ideas and practical implementation. For changemakers, appreciating these complexities fosters more equitable solutions and ensures that the human element remains central to the design process.',
 		quote: {
-			text: '"Alas," said the mouse, "the whole world is growing smaller every day. At the beginning it was so big that I was afraid, I kept running and running, and I was glad when I saw walls far away to the right and left, but these long walls have narrowed so quickly that I am in the last chamber already, and there in the corner stands the trap that I am running into."',
 			attribute: 'Franz Kafka',
+			text: 'Human nature, essentially changeable, unstable as the dust, can endure no restraint; if it binds itself it soon begins to tear madly at its bonds, until it rends everything asunder, the wall, the bonds, and its very self.',
 		},
 		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
+			wikipedia:
+				'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
 			amazon: 'https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083',
-			goodreads: 'https://www.goodreads.com/book/show/177576.The_Great_Wall_of_China_and_other_Stories',
+			goodreads:
+				'https://www.goodreads.com/book/show/177576.The_Great_Wall_of_China_and_other_Stories',
 		},
 	},
 	{
 		title: 'How to Make Sense of Any Mess',
-		authors: [{ name: 'Abby Covert', url: 'https://abbycovert.com/' }],
+		authors: [
+			{
+				name: 'Abby Covert',
+				link: 'https://abbycovert.com/',
+			},
+		],
 		coverImage: '/books/covert.jpg',
 		metadata: {
-			publishYear: 2014,
+			blurb: 'Abby Covert provides strategies to tackle ambiguity and organise information so that people can engage with clarity and confidence.',
 			genre: 'Sensemaking Strategies',
-			pages: 174,
+			pageCount: 174,
 			publisher: 'CreateSpace Independent Publishing Platform',
-		},
-		personalComment:
-			'Powerful ways to explore ambiguity, systematically create clarity and order, and help others understand the world around them.',
-		quote: {
-			text: 'Information architecture is the way that we arrange the parts of something to make it understandable.',
-			attribute: 'Abby Covert',
+			publishYear: 2014,
 		},
 		link: {
-			home: 'https://www.howtomakesenseofanymess.com/',
 			amazon: 'https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994',
-			goodreads: 'https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess',
+			goodreads:
+				'https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess',
+			home: 'https://www.howtomakesenseofanymess.com/',
 		},
+		quote: {
+			attribute: 'Abby Covert',
+			text: 'Information architecture is the way that we arrange the parts of something to make it understandable.',
+		},
+		personalComment:
+			'This book illuminates a simple yet powerful approach to structuring chaos. By guiding readers through a detailed process for clarifying ambiguous content, it empowers you to bring a strategic edge to design.\n\nIt fosters an environment where communication is clear and focused on real human needs—vital for any UX designer aiming to create ethical, inclusive experiences. In doing so, it helps ensure that organisations can address core issues rather than symptoms.\n\nUltimately, Covert’s insights into sensemaking provide a robust framework for practitioners determined to shape meaningful change. By embracing this straightforward methodology, you place people’s understanding and well-being at the heart of every design decision.',
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
 		authors: [
 			{
 				name: 'Christina Wodtke',
-				url: 'https://en.wikipedia.org/wiki/Christina_Wodtke',
+				link: 'https://en.wikipedia.org/wiki/Christina_Wodtke',
 			},
 		],
 		coverImage: '/books/wodtke.jpg',
 		metadata: {
-			publishYear: 2002,
+			blurb: 'A practical guide to structuring websites and apps so that users can easily find what they need, focusing on clarity, usability, and best practices in organising information.',
 			genre: 'Content Strategies',
-			pages: 224,
+			pageCount: 224,
 			publisher: 'New Riders',
-		},
-		personalComment:
-			'A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.',
-		quote: {
-			text: 'Information architecture is the art and science of structuring and organizing the information in products and services, supporting usability and findability.',
-			attribute: 'Christina Wodtke',
+			publishYear: 2002,
 		},
 		link: {
 			wikipedia: 'https://en.wikipedia.org/wiki/Information_architecture',
 			amazon: 'https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506',
-			goodreads: 'https://www.goodreads.com/book/show/224130.Information_Architecture',
+			goodreads:
+				'https://www.goodreads.com/book/show/224130.Information_Architecture',
 		},
+		quote: {
+			attribute: 'Christina Wodtke',
+			text: 'Information architecture is the art and science of structuring and organizing the information in products and services, supporting usability and findability.',
+		},
+		personalComment:
+			'A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.',
 	},
 	{
 		title: 'Information Dashboard Design',
 		authors: [
 			{
 				name: 'Stephen Few',
-				url: 'https://www.perceptualedge.com/',
+				link: 'https://www.perceptualedge.com/',
 			},
 		],
 		coverImage: '/books/few.jpg',
 		metadata: {
-			publishYear: 2006,
+			blurb: 'A concise, practical guide to designing dashboards for effective data presentation. Stephen Few emphasises clarity, efficiency, and user-centric layout to drive insightful decision-making.',
 			genre: 'Data Visualisation',
-			pages: 223,
+			pageCount: 223,
 			publisher: "O'Reilly Media",
-		},
-		personalComment:
-			'The key principles of straightforward data presentation that can ensure clarity and actionable insights, avoiding the temptation to be too clever.',
-		quote: {
-			text: 'Dashboards are not reports; they are visual displays of the most important information needed to achieve one or more objectives.',
-			attribute: 'Stephen Few',
+			publishYear: 2006,
 		},
 		link: {
 			amazon: 'https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001',
-			goodreads: 'https://www.goodreads.com/book/show/3254937-information-dashboard-design',
+			goodreads:
+				'https://www.goodreads.com/book/show/3254937-information-dashboard-design',
 		},
+		quote: {
+			attribute: 'Stephen Few',
+			text: 'Dashboards are not reports; they are visual displays of the most important information needed to achieve one or more objectives.',
+		},
+		personalComment:
+			'The key principles of straightforward data presentation that can ensure clarity and actionable insights, avoiding the temptation to be too clever.',
 	},
 	{
 		title: 'Intertwingled: Information Changes Everything',
 		authors: [
 			{
 				name: 'Peter Morville',
-				url: 'https://en.wikipedia.org/wiki/Peter_Morville',
+				link: 'https://en.wikipedia.org/wiki/Peter_Morville',
 			},
 		],
 		coverImage: '/books/morville.jpg',
 		metadata: {
-			publishYear: 2014,
+			blurb: 'A look at how information architecture and design intersect, showing how interconnected data shapes our world and underlining the importance of designing for complexity.',
 			genre: 'Information Science',
-			pages: 197,
+			pageCount: 197,
 			publisher: 'Semantic Studios',
-		},
-		personalComment:
-			'A deep dive into the interconnectedness of data and design, exploring how information shapes our understanding of the world and the importance of designing for complexity.',
-		quote: {
-			text: 'In the beginning was the word. But where do words begin? And where do they lead? Our expedition is fueled by questions.',
-			attribute: 'Peter Morville',
+			publishYear: 2014,
 		},
 		link: {
 			wikipedia: 'https://en.wikipedia.org/wiki/Peter_Morville',
 			amazon: 'https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587',
-			goodreads: 'https://www.goodreads.com/book/show/22931460-intertwingled',
+			goodreads:
+				'https://www.goodreads.com/book/show/22931460-intertwingled',
 			home: 'https://intertwingled.org/',
 		},
+		quote: {
+			attribute: 'Peter Morville',
+			text: 'In the beginning was the word. But where do words begin? And where do they lead? Our expedition is fueled by questions.',
+		},
+		personalComment:
+			'A deep dive into the interconnectedness of data and design, exploring how information shapes our understanding of the world and the importance of designing for complexity.',
 	},
 	{
 		title: 'The Laws of Simplicity',
 		authors: [
 			{
 				name: 'John Maeda',
-				url: 'https://bsky.app/profile/johnmaeda.bsky.social',
+				link: 'https://bsky.app/profile/johnmaeda.bsky.social',
 			},
 		],
 		coverImage: '/books/maeda.jpg',
 		metadata: {
-			publishYear: 2006,
 			genre: 'Design',
-			pages: 128,
+			pageCount: 128,
 			publisher: 'The MIT Press',
-		},
-		personalComment:
-			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with easy-to-grasp concepts.',
-		quote: {
-			text: 'Simplicity is about subtracting the obvious and adding the meaningful.',
-			attribute: 'John Maeda',
+			publishYear: 2006,
 		},
 		link: {
 			wikipedia: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
-			goodreads: 'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
+			goodreads:
+				'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
 			amazon: 'https://www.amazon.de/-/en/Laws-Simplicity-Design-Technology-Business/dp/0262539470',
 			home: 'http://lawsofsimplicity.com/',
 		},
+		quote: {
+			attribute: 'John Maeda',
+			text: 'Simplicity is about subtracting the obvious and adding the meaningful.',
+		},
+		personalComment:
+			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with easy-to-grasp concepts.',
 	},
 	{
 		title: 'Mind Design II: Philosophy, Psychology, and Artificial Intelligence',
 		authors: [
 			{
 				name: 'John Haugeland',
-				url: 'https://en.wikipedia.org/wiki/John_Haugeland',
+				link: 'https://en.wikipedia.org/wiki/John_Haugeland',
 			},
 		],
 		coverImage: '/books/haugeland.jpg',
 		metadata: {
-			publishYear: 1997,
+			blurb: 'A philosophical look at artificial intelligence, uniting psychology and computation to examine the nature of cognition and what truly defines a mind.',
 			genre: 'Artificial Intelligence',
-			pages: 488,
+			pageCount: 488,
 			publisher: 'The MIT Press',
-		},
-		personalComment:
-			'A deep exploration of the philosophical implications of artificial intelligence, challenging our understanding of the differences between minds and machines.',
-		quote: {
-			text: 'Minds are simply what brains do.',
-			attribute: 'John Haugeland',
+			publishYear: 1997,
 		},
 		link: {
-			goodreads: 'https://www.goodreads.com/book/show/150696.Mind_Design_II',
+			goodreads:
+				'https://www.goodreads.com/book/show/150696.Mind_Design_II',
 			amazon: 'https://www.amazon.de/-/en/Mind-Design-Philosophy-Psychology-Intelligence/dp/0262581531',
 			home: 'https://mitpress.mit.edu/9780262581530/mind-design-ii/',
 		},
+		quote: {
+			attribute: 'John Haugeland',
+			text: 'Minds are simply what brains do.',
+		},
+		personalComment:
+			'A deep exploration of the philosophical implications of artificial intelligence, challenging our understanding of the differences between minds and machines.',
 	},
 	{
 		title: 'The Sciences of the Artificial',
 		authors: [
 			{
 				name: 'Herbert A. Simon',
-				url: 'https://en.wikipedia.org/wiki/Herbert_A._Simon',
+				link: 'https://en.wikipedia.org/wiki/Herbert_A._Simon',
 			},
 		],
 		coverImage: '/books/simon.jpg',
 		metadata: {
-			publishYear: 1969,
+			blurb: 'A foundational text bridging engineering, economics, and cognition, outlining a broad framework for how we design and understand artificial systems.',
 			genre: 'Design Theory',
-			pages: 216,
+			pageCount: 216,
 			publisher: 'MIT Press',
+			publishYear: 1969,
 		},
-		personalComment: 'A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.',
+		link: {
+			goodreads:
+				'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
+			amazon: 'https://www.amazon.com/Sciences-Artificial-Herbert-A-Simon/dp/0262691914',
+			home: 'https://mitpress.mit.edu/9780262691913/the-sciences-of-the-artificial/',
+		},
 		quote: {
 			text: 'Everyone designs who devises courses of action aimed at changing existing situations into preferred ones.',
 			attribute: 'Herbert A. Simon',
 		},
-		link: {
-			goodreads: 'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
-			amazon: 'https://www.amazon.com/Sciences-Artificial-Herbert-A-Simon/dp/0262691914',
-			home: 'https://mitpress.mit.edu/9780262691913/the-sciences-of-the-artificial/',
-		},
+		personalComment:
+			'A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.',
 	},
 	{
 		title: 'Sound by Artists',
 		authors: [
 			{
 				name: 'Dan Lander',
-				url: 'https://www.ubu.com/sound/lander.html',
+				link: 'https://www.ubu.com/sound/lander.html',
 			},
 			{
 				name: 'Micah Lexier',
-				url: 'https://www.micahlexier.com/',
+				link: 'https://www.micahlexier.com/',
 			},
 		],
 		coverImage: '/books/lander.jpg',
 		metadata: {
-			publishYear: 1990,
+			blurb: 'A diverse collection of essays and artworks reflecting on the intersections of audio, performance, and conceptual art, expanding the boundaries of how we experience sound.',
 			genre: 'Art',
-			pages: 372,
+			pageCount: 372,
 			publisher: 'Charivari Press & Blackwood Gallery',
+			publishYear: 1990,
 		},
-		personalComment: 'A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.',
+		link: {
+			goodreads:
+				'https://www.goodreads.com/book/show/15755476-sound-by-artists',
+			amazon: 'https://www.amazon.de/-/en/Sound-Artists-Dan-Lander/dp/1895166284',
+			home: 'https://www.blackwoodgallery.ca/publications/sound-by-artists',
+		},
 		quote: {
 			text: 'Sound art is situated between categories, between seeing and hearing, between time-based media and object-based media.',
 			attribute: 'Dan Lander',
 		},
-		link: {
-			goodreads: 'https://www.goodreads.com/book/show/15755476-sound-by-artists',
-			amazon: 'https://www.amazon.de/-/en/Sound-Artists-Dan-Lander/dp/1895166284',
-			home: 'https://www.blackwoodgallery.ca/publications/sound-by-artists',
-		},
+		personalComment:
+			'A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.',
 	},
 	{
 		title: 'Thinking, Fast and Slow',
 		authors: [
 			{
 				name: 'Daniel Kahneman',
-				url: 'https://en.wikipedia.org/wiki/Daniel_Kahneman',
+				link: 'https://en.wikipedia.org/wiki/Daniel_Kahneman',
 			},
 		],
 		coverImage: '/books/kahneman.jpg',
 		metadata: {
-			publishYear: 2011,
+			blurb: 'An in-depth look at the dual processes of thought—automatic intuition and deliberate reasoning—revealing how these systems shape our choices and biases.',
 			genre: 'Psychology',
-			pages: 512,
+			pageCount: 512,
 			publisher: 'Farrar, Straus and Giroux',
+			publishYear: 2011,
 		},
-		personalComment: 'A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.',
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
+			goodreads:
+				'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
+			amazon: 'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
+		},
 		quote: {
 			text: 'A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth.',
 			attribute: 'Daniel Kahneman',
 		},
-		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
-			goodreads: 'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
-			amazon: 'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
-		},
+		personalComment:
+			'A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.',
 	},
 	{
 		title: 'Transcend: The New Science of Self-Actualisation',
 		authors: [
 			{
 				name: 'Scott Barry Kaufman',
-				url: 'https://en.wikipedia.org/wiki/Scott_Barry_Kaufman',
+				link: 'https://en.wikipedia.org/wiki/Scott_Barry_Kaufman',
 			},
 		],
 		coverImage: '/books/kaufman.jpg',
 		metadata: {
-			publishYear: 2020,
+			blurb: 'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
 			genre: 'Psychology',
-			pages: 432,
+			pageCount: 432,
 			publisher: 'TarcherPerigee',
-		},
-		personalComment: 'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
-		quote: {
-			text: 'Growth is a messy, nonlinear process.',
-			attribute: 'Scott Barry Kaufman',
+			publishYear: 2020,
 		},
 		link: {
 			goodreads: 'https://www.goodreads.com/book/show/49625550-transcend',
 			amazon: 'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
 			home: 'https://scottbarrykaufman.com/podcast/transcend-with-scott-barry-kaufman/',
 		},
+		quote: {
+			text: 'Growth is a messy, nonlinear process.',
+			attribute: 'Scott Barry Kaufman',
+		},
+		personalComment:
+			'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
 	},
 	{
 		title: 'The Visual Display of Quantitative Information',
 		authors: [
 			{
 				name: 'Edward R. Tufte',
-				url: 'https://en.wikipedia.org/wiki/Edward_Tufte',
+				link: 'https://en.wikipedia.org/wiki/Edward_Tufte',
 			},
 		],
 		coverImage: '/books/tufte.jpg',
 		metadata: {
-			publishYear: 1983,
+			blurb: 'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
 			genre: 'Data Visualisation',
-			pages: 197,
+			pageCount: 197,
 			publisher: 'Graphics Press',
+			publishYear: 1983,
 		},
-		personalComment:
-			'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
+		link: {
+			goodreads:
+				'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
+			amazon: 'https://www.amazon.de/-/en/Visual-Display-Quantitative-Information/dp/1930824130',
+			home: 'https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/',
+		},
 		quote: {
 			text: 'Excellence in statistical graphics consists of complex ideas communicated with clarity, precision, and efficiency.',
 			attribute: 'Edward R. Tufte',
 		},
-		link: {
-			goodreads: 'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
-			amazon: 'https://www.amazon.de/-/en/Visual-Display-Quantitative-Information/dp/1930824130',
-			home: 'https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/',
-		},
+		personalComment:
+			'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
 	},
 	{
 		title: 'Ways of Seeing',
 		authors: [
 			{
 				name: 'John Berger',
-				url: 'https://en.wikipedia.org/wiki/John_Berger',
+				link: 'https://en.wikipedia.org/wiki/John_Berger',
 			},
 		],
 		coverImage: '/books/berger.jpg',
 		metadata: {
-			publishYear: 1972,
+			blurb: 'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
 			genre: 'Art Criticism',
-			pages: 166,
+			pageCount: 166,
 			publisher: 'Penguin Books',
+			publishYear: 1972,
 		},
-		personalComment: 'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
+			goodreads:
+				'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
+			amazon: 'https://www.amazon.de/-/en/Ways-Seeing-Berger-Penguin-Classics/dp/014103579X',
+		},
 		quote: {
 			text: 'The way we see things is affected by what we know or what we believe.',
 			attribute: 'John Berger',
 		},
-		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
-			goodreads: 'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
-			amazon: 'https://www.amazon.de/-/en/Ways-Seeing-Berger-Penguin-Classics/dp/014103579X',
-		},
+		personalComment:
+			'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
 	},
 	{
 		title: 'What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley',
 		authors: [
 			{
 				name: 'Adrian Daub',
-				url: 'https://www.adriandaub.com/',
+				link: 'https://www.adriandaub.com/',
 			},
 		],
 		coverImage: '/books/daub.jpg',
 		metadata: {
-			publishYear: 2020,
+			blurb: "Provides a critical examination of Silicon Valley's ideologies, prompting reflection on the tech industry's influence on society.",
 			genre: 'Technology Critique',
-			pages: 160,
+			pageCount: 160,
 			publisher: 'Farrar, Straus and Giroux',
-		},
-		personalComment: 'Provides a critical examination of Silicon Valley\'s ideologies, prompting reflection on the tech industry\'s influence on society.',
-		quote: {
-			text: 'Silicon Valley\'s rhetoric often starts by invoking the future to better dismiss the claims of the present.',
-			attribute: 'Adrian Daub',
+			publishYear: 2020,
 		},
 		link: {
-			goodreads: 'https://www.goodreads.com/book/show/50403471-what-tech-calls-thinking',
+			goodreads:
+				'https://www.goodreads.com/book/show/50403471-what-tech-calls-thinking',
 			amazon: 'https://www.amazon.com/What-Tech-Calls-Thinking-Intellectual-ebook/dp/B084M1NCF7',
 			home: 'https://www.adriandaub.com/books/what-tech-calls',
 		},
+		quote: {
+			text: "Silicon Valley's rhetoric often starts by invoking the future to better dismiss the claims of the present.",
+			attribute: 'Adrian Daub',
+		},
+		personalComment:
+			"Provides a critical examination of Silicon Valley's ideologies, prompting reflection on the tech industry's influence on society.",
 	},
 	{
 		title: "The Whole Internet: User's Guide and Catalog",
 		authors: [
 			{
 				name: 'Ed Krol',
-				url: 'https://en.wikipedia.org/wiki/Ed_Krol',
+				link: 'https://en.wikipedia.org/wiki/Ed_Krol',
 			},
 		],
 		coverImage: '/books/krol.jpg',
 		metadata: {
-			publishYear: 1992,
+			blurb: "A time capsule of the web's early spirit that reveals openness, curiosity, and the DIY approach that characterised the birth of the internet.",
 			genre: 'Technology',
-			pages: 640,
+			pageCount: 640,
 			publisher: "O'Reilly Media",
+			publishYear: 1992,
 		},
-		personalComment:
-			'A time capsule of the web\'s early spirit that reminds me of the openness, curiosity, and DIY spirit of the early internet',
+		link: {
+			wikipedia:
+				'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
+			goodreads: 'https://www.goodreads.com/book/show/2954315',
+			amazon: 'https://www.amazon.com/Whole-Internet-Catalog-Nutshell-Handbook/dp/1565920252',
+		},
 		quote: {
 			text: 'The Internet connects thousands of computer networks around the world. The fact that all these networks can talk to each other is a marvel of modern technology.',
 			attribute: 'Ed Krol',
 		},
-		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
-			goodreads: 'https://www.goodreads.com/book/show/2954315',
-			amazon: 'https://www.amazon.com/Whole-Internet-Catalog-Nutshell-Handbook/dp/1565920252',
-		},
+		personalComment:
+			"A time capsule of the web's early spirit that reminds me of the openness, curiosity, and DIY spirit of the early internet",
 	},
 ];
