@@ -6,48 +6,74 @@ export const books: Book[] = [
 		authors: [
 			{
 				name: 'Jenifer Tidwell',
-				url: 'https://www.linkedin.com/in/jenifertidwell/',
+				link: 'https://www.linkedin.com/in/jenifertidwell/',
 			},
 		],
 		coverImage: '/books/tidwell.jpg',
 		metadata: {
-			publishYear: 2005,
+			blurb: 'A practical guide to user interface patterns and best practices, enabling designers to craft user-friendly and intuitive experiences across diverse platforms.',
 			genre: 'User Interface Design',
-			pages: 368,
+			pageCount: 368,
 			publisher: "O'Reilly Media",
-		},
-		personalComment:
-			'A strong foundation for any interaction design vocabulary. This book is essential reading for anyone creating usable interfaces.',
-		quote: {
-			text: "UX designers have to constantly learn about human psychology, interaction design, information architecture and user research techniques, just to name a few, in order to create the right solutions to a user's problems.",
-			attribute: 'Jenifer Tidwell',
+			publishYear: 2005,
 		},
 		link: {
 			amazon: 'https://www.amazon.com/Designing-Interfaces-Patterns-Effective-Interaction/dp/1449379702',
 			goodreads:
 				'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
 		},
+		quote: {
+			attribute: 'Jenifer Tidwell',
+			text: "UX designers have to constantly learn about human psychology, interaction design, information architecture and user research techniques, just to name a few, in order to create the right solutions to a user's problems.",
+		},
+		personalComment:
+			"This book provides a clear, structured overview of the core patterns that drive effective interface design. It highlights the importance of accessible, consistent interactions that enable people to engage with digital systems effortlessly.\n\nBy illustrating how patterns emerge from genuine user needs, it grounds design decisions in empathy and observation. These insights encourage a culture of ethical responsibility, ensuring that every interface genuinely supports its audience.\n\nUltimately, 'Designing Interfaces' fosters a strategic mindset by showing how carefully considered patterns can spark transformative change. In doing so, it serves as a cornerstone for UX designers determined to impact society positively through thoughtful interface development.",
+	},
+	{
+		title: 'The Decision Book: Fifty Models for Strategic Thinking',
+		authors: [
+			{
+				name: 'Mikael Krogerus',
+			},
+			{
+				name: 'Roman Tschäppeler',
+			},
+		],
+		coverImage: '/books/krogerus.jpg',
+		metadata: {
+			blurb: 'A compact guide offering 50 simple yet powerful mental models to assist in decision-making, personal reflection, and strategic thinking for professionals and individuals alike.',
+			genre: 'Decision-Making',
+			pageCount: 176,
+			publisher: 'Profile Books',
+			publishYear: 2011,
+		},
+		link: {
+			amazon: 'https://www.amazon.co.uk/Decision-Book-models-strategic-thinking/dp/1781259542',
+			goodreads:
+				'https://www.goodreads.com/book/show/10206987-the-decision-book',
+		},
+		quote: {
+			attribute: 'Mikael Krogerus & Roman Tschäppeler',
+			text: 'Complex realities demand simple tools for clear, strategic decisions.',
+		},
+		personalComment:
+			'This book presents a concise toolkit for anyone needing clarity in critical moments. Each model offers a structured approach to untangling uncertainty, allowing readers to see problems and solutions from a fresh perspective.\n\nTaken together, these models encourage self-awareness and deeper insight into how we make choices, big or small. By applying these frameworks, UX and service designers can become more intentional in crafting user-centric outcomes.\n\nUltimately, the text shows that combining simplicity with rigour can inform ethical, impactful design decisions. It’s a powerful resource for those who aim to create thoughtful, socially minded experiences and drive meaningful change.',
 	},
 	{
 		title: 'The Doors of Perception',
 		authors: [
 			{
 				name: 'Aldous Huxley',
-				url: 'https://en.wikipedia.org/wiki/Aldous_Huxley',
+				link: 'https://en.wikipedia.org/wiki/Aldous_Huxley',
 			},
 		],
 		coverImage: '/books/huxley.jpg',
 		metadata: {
-			publishYear: 1954,
+			blurb: 'A vivid exploration of perception and consciousness, challenging assumptions about reality and human experience.',
 			genre: 'Philosophy',
-			pages: 63,
+			pageCount: 63,
 			publisher: 'Chatto & Windus',
-		},
-		personalComment:
-			'A philosophical exploration of perception and consciousness, challenging our understanding of reality and the nature of experience.',
-		quote: {
-			text: 'To see ourselves as others see us is a most salutary gift. Hardly less important is the capacity to see others as they see themselves.',
-			attribute: 'Aldous Huxley',
+			publishYear: 1954,
 		},
 		link: {
 			amazon: 'https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719',
@@ -55,27 +81,28 @@ export const books: Book[] = [
 				'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
 			wikipedia: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
 		},
+		quote: {
+			attribute: 'Aldous Huxley',
+			text: 'To see ourselves as others see us is a most salutary gift. Hardly less important is the capacity to see others as they see themselves.',
+		},
+		personalComment:
+			'Reading this text encourages you to question the default ways we interpret and structure reality, which is crucial for UX designers aiming to create inclusive, boundary-pushing solutions.\n\nBy delving into altered states of mind and challenging conventional wisdom, Huxley’s perspective opens up new pathways for empathy and understanding. This deepened awareness can translate into designing experiences that resonate with a broader spectrum of human perceptions.\n\nUltimately, it reminds us that fresh, inventive design solutions often stem from examining the hidden assumptions in our own viewpoints. Embracing alternative perceptions can be a powerful catalyst for social change and ethical practice.',
 	},
 	{
 		title: 'The End of the World Is Just the Beginning',
 		authors: [
 			{
 				name: 'Peter Zeihan',
-				url: 'https://en.wikipedia.org/wiki/Peter_Zeihan',
+				link: 'https://en.wikipedia.org/wiki/Peter_Zeihan',
 			},
 		],
 		coverImage: '/books/zeihan.jpg',
 		metadata: {
-			publishYear: 2022,
+			blurb: 'Peter Zeihan analyses shifting demographics, geopolitical tensions, and economic transitions to show how the unraveling of globalisation will reshape the balance of power and daily life around the world.',
 			genre: 'Geopolitics',
-			pages: 512,
+			pageCount: 512,
 			publisher: 'Harper Business',
-		},
-		personalComment:
-			'A state-of-the-union analysis of how demographics, economics, history, and politics shape our world. An essential primer in real-world complex adaptive systems.',
-		quote: {
-			text: 'Geography does not change. Demographics do not lie. And we have a historyful of history as to how countries and peoples react to their environment.',
-			attribute: 'Peter Zeihan',
+			publishYear: 2022,
 		},
 		link: {
 			amazon: 'https://www.amazon.com/End-World-Just-Beginning-Globalization/dp/006323047X',
@@ -84,27 +111,28 @@ export const books: Book[] = [
 			wikipedia:
 				'https://en.wikipedia.org/wiki/The_End_of_the_World_Is_Just_the_Beginning',
 		},
+		quote: {
+			attribute: 'Peter Zeihan',
+			text: 'Geography does not change. Demographics do not lie. And we have a historyful of history as to how countries and peoples react to their environment.',
+		},
+		personalComment:
+			'Zeihan’s work offers a compelling macro-level perspective that can help UX designers anticipate future societal shifts and adapt their thinking around technological and social change.\n\nBy examining how demographic trends, geopolitics, and economics interact, the book provokes a systems-thinking mindset. As designers, this heightened awareness can lead us to create solutions that respond effectively to emerging global conditions.\n\nOverall, it encourages us to look beyond familiar frameworks and plan for the changes ahead, ensuring we make meaningful contributions to society by designing with a deep understanding of the larger forces shaping our world.',
 	},
 	{
 		title: 'Fully Automated Luxury Communism: A Manifesto',
 		authors: [
 			{
 				name: 'Aaron Bastani',
-				url: 'https://en.wikipedia.org/wiki/Aaron_Bastani',
+				link: 'https://en.wikipedia.org/wiki/Aaron_Bastani',
 			},
 		],
 		coverImage: '/books/bastani.jpg',
 		metadata: {
-			publishYear: 2019,
+			blurb: 'Aaron Bastani explores how advanced automation could radically transform economic structures, suggesting a future of shared abundance beyond traditional capitalist models.',
 			genre: 'Political Philosophy',
-			pages: 288,
+			pageCount: 288,
 			publisher: 'Verso Books',
-		},
-		personalComment:
-			'An exploration of how mass automation out of the hands of corporate interests could lead to a more equitable society, challenging traditional economic structures.',
-		quote: {
-			text: 'We have a world to win.',
-			attribute: 'Aaron Bastani',
+			publishYear: 2019,
 		},
 		link: {
 			amazon: 'https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624',
