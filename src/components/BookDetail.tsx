@@ -29,13 +29,15 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 						priority
 					/>
 				</div>
-				<div className='col-span-12 lg:col-span-3 flex flex-col gap-2'>
-					{/* <div className='flex items-center gap-2 mb-6'>
+			</div>
+
+			<div className='col-span-12 lg:col-span-3 flex flex-col gap-2'>
+				{/* <div className='flex items-center gap-2 mb-6'>
 					<span className='px-2 py-1 rounded border border-bones-black dark:border-bones-linen text-bones-black dark:text-bones-linen text-sm font-medium'>
 						{book.metadata.genre}
 					</span>
 				</div> */}
-					{/* <h2 className='text-3xl font-black text-bones-black dark:text-bones-linen'>
+				<h2 className='text-3xl font-black text-bones-black dark:text-bones-linen'>
 					{book.title}
 				</h2>
 				<p className='flex flex-wrap gap-1 font-medium text-bones-black dark:text-bones-linen'>
@@ -57,36 +59,35 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 							{index < book.authors.length - 1 && ', '}
 						</React.Fragment>
 					))}
-				</p> */}
-					{book.metadata.blurb && (
-						<p className='text-lg font-medium text-bones-black dark:text-bones-linen'>
-							{book.metadata.blurb}
-						</p>
-					)}
-					<p className='text-base font-medium text-bones-darkgray dark:text-bones-linen'>
-						Published by {book.metadata.publisher},{' '}
-						{book.metadata.publishYear}
+				</p>
+				{book.metadata.blurb && (
+					<p className='text-lg font-medium text-bones-black dark:text-bones-linen'>
+						{book.metadata.blurb}
 					</p>
+				)}
+				<p className='text-base font-medium text-bones-darkgray dark:text-bones-linen'>
+					Published by {book.metadata.publisher},{' '}
+					{book.metadata.publishYear}
+				</p>
 
-					{links.length > 0 && (
-						<div className='flex flex-wrap gap-4'>
-							{links.map((link, index) => (
-								<a
-									key={index}
-									href={link.url}
-									target='_blank'
-									rel='noopener noreferrer'
-									className='text-bones-blue dark:text-bones-gold hover:underline text-base font-medium'>
-									{link.label}
-								</a>
-							))}
-						</div>
-					)}
-				</div>
+				{links.length > 0 && (
+					<div className='flex flex-wrap gap-4'>
+						{links.map((link, index) => (
+							<a
+								key={index}
+								href={link.url}
+								target='_blank'
+								rel='noopener noreferrer'
+								className='text-bones-blue dark:text-bones-gold hover:underline text-base font-medium'>
+								{link.label}
+							</a>
+						))}
+					</div>
+				)}
 			</div>
 
 			{/* quote + comment */}
-			<div className='col-span-12 lg:col-span-8 overflow-y-auto max-h-full pr-4 flex flex-col gap-8'>
+			<div className='col-span-12 lg:col-span-6 overflow-y-auto max-h-full pr-4 flex flex-col gap-8'>
 				{book.quote && (
 					<div>
 						<blockquote className='text-4xl font-semibold italic text-bones-black dark:text-bones-linen'>
