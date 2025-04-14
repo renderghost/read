@@ -116,11 +116,11 @@ const Modal: React.FC<ModalProps> = ({
 						className='grid grid-rows-[auto_1fr_auto] w-screen h-screen bg-bones-white dark:bg-bones-dimgray overflow-hidden'
 						ref={contentRef}>
 						{/* Header */}
-						<div className='flex justify-between items-center p-4 border-b border-bones-black dark:border-bones-linen'>
-							<div className='flex items-center gap-4'>
+						<div className='flex justify-between items-center px-12 py-8 gap-4 border-b border-bones-black dark:border-bones-linen'>
+							<div className='flex items-center '>
 								<h2
 									id='modal-title'
-									className='text-2xl font-black text-bones-black dark:text-bones-linen'>
+									className='text-3xl font-black text-bones-black dark:text-bones-linen'>
 									{book.title} by{' '}
 									{book.authors.map((author, index) => (
 										<React.Fragment key={index}>
@@ -140,15 +140,12 @@ const Modal: React.FC<ModalProps> = ({
 										</React.Fragment>
 									))}
 								</h2>
-								<span className='px-2 py-1 rounded border border-bones-black dark:border-bones-linen text-bones-black dark:text-bones-linen text-sm font-medium'>
-									{book.metadata.genre}
-								</span>
 							</div>
 
 							<button
 								ref={closeButtonRef}
 								onClick={onClose}
-								className='p-2 rounded-full bg-bones-linen dark:bg-bones-slategray text-bones-black dark:text-bones-linen hover:bg-bones-gainsboro dark:hover:bg-bones-black transition-colors'>
+								className='p-2 rounded-full bg-bones-aliceblue dark:bg-bones-slategray text-bones-black dark:text-bones-linen hover:bg-bones-gainsboro dark:hover:bg-bones-black transition-colors'>
 								<X className='w-5 h-5' />
 							</button>
 						</div>
@@ -164,15 +161,15 @@ const Modal: React.FC<ModalProps> = ({
 								onClick={handlePrevious}
 								disabled={!previousBook}
 								aria-disabled={!previousBook}
-								className={`flex flex-col flex-grow w-full items-start p-4 bg-bones-white hover:bg-bones-linen  ${
+								className={`flex flex-col flex-grow w-full items-start px-12 py-8 gap-1 bg-bones-white hover:bg-bones-aliceblue  ${
 									!previousBook
 										? 'opacity-50 cursor-not-allowed'
 										: 'hover:bg-bones-transparent'
 								}`}>
-								<span className='text-lg font-black text-bones-blue dark:text-bones-gold'>
+								<span className='text-xl font-black text-bones-blue dark:text-bones-gold'>
 									{previousBook?.title || 'Start of list'}
 								</span>
-								<span className='text-sm font-medium text-bones-black dark:text-bones-linen'>
+								<span className='font-medium text-bones-black dark:text-bones-linen'>
 									PREV
 								</span>
 							</button>
@@ -180,15 +177,15 @@ const Modal: React.FC<ModalProps> = ({
 								onClick={handleNext}
 								disabled={!nextBook}
 								aria-disabled={!nextBook}
-								className={`flex flex-col flex-grow w-full items-end p-4 bg-bones-white hover:bg-bones-linen  ${
+								className={`flex flex-col flex-grow w-full items-end gap-1 px-12 py-8 bg-bones-white hover:bg-bones-aliceblue  ${
 									!nextBook
 										? 'opacity-50 cursor-not-allowed'
 										: 'hover:bg-bones-transparent'
 								}`}>
-								<span className='text-lg font-black text-bones-blue dark:text-bones-gold'>
+								<span className='text-xl font-black text-bones-blue dark:text-bones-gold'>
 									{nextBook?.title || 'End of list'}
 								</span>
-								<span className='text-sm font-medium text-bones-black dark:text-bones-linen'>
+								<span className='font-medium text-bones-black dark:text-bones-linen'>
 									NEXT
 								</span>
 							</button>

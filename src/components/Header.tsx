@@ -20,7 +20,7 @@ const HeaderContent = () => {
 					24 books to reshape how you think about great design
 				</h1>
 				<p className='font-medium text-bones-black dark:text-bones-linen text-xl lg:text-2xl'>
-					Selected by{' '}
+					A selection by{' '}
 					<a
 						href='https://links.renderg.host'
 						target='_blank'

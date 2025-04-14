@@ -15,59 +15,36 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 	].filter(link => link.url && link.url !== '#');
 
 	return (
-		<div className='w-full h-full grid grid-cols-1 lg:grid-cols-12 gap-12 p-12'>
-			{/* COVER COLUMN */}
-			<div className='col-span-12 lg:col-span-3 flex flex-col items-start gap-4'>
-				<div className='w-full relative p-1 ring-1 ring-bones-black dark:ring-bones-linen'>
-					<Image
-						src={book.coverImage}
-						alt={`Cover of ${book.title}`}
-						width={0}
-						height={0}
-						sizes='100vw'
-						className='w-full h-auto p-2 rounded object-cover'
-						priority
-					/>
-				</div>
+		<div className='w-full h-full grid grid-cols-1 lg:grid-cols-11 gap-12 p-12'>
+			{/* COLUMN -- 1 */}
+			<div className='col-span-12 overflow-y-auto lg:col-span-3 flex flex-col items-start gap-4'>
+				<Image
+					src={book.coverImage}
+					alt={`Cover of ${book.title}`}
+					width={0}
+					height={0}
+					sizes='100vw'
+					className='w-full h-auto object-cover border border-bones-black/10'
+					priority
+				/>
 			</div>
 
-			<div className='col-span-12 lg:col-span-3 flex flex-col gap-2'>
-				{/* <div className='flex items-center gap-2 mb-6'>
-					<span className='px-2 py-1 rounded border border-bones-black dark:border-bones-linen text-bones-black dark:text-bones-linen text-sm font-medium'>
+			{/* COLUMN -- 2 */}
+			<div className='col-span-12 lg:col-span-4 overflow-y-auto flex flex-col gap-4 text-xl'>
+				<div className='flex flex-wrap gap-2'>
+					<span className='px-2 py-1 bg-bones-linen text-bones-black dark:bg-bones-dimgray dark:text-bones-linen font-medium'>
 						{book.metadata.genre}
 					</span>
-				</div> */}
-				<h2 className='text-3xl font-black text-bones-black dark:text-bones-linen'>
-					{book.title}
-				</h2>
-				<p className='flex flex-wrap gap-1 font-medium text-bones-black dark:text-bones-linen'>
-					<span>by</span>
-					{'  '}
-					{book.authors.map((author, index) => (
-						<React.Fragment key={index}>
-							{author.link ? (
-								<a
-									href={author.link}
-									target='_blank'
-									rel='noopener noreferrer'
-									className='text-bones-blue dark:text-bones-gold hover:underline'>
-									{author.name}
-								</a>
-							) : (
-								<span>{author.name}</span>
-							)}
-							{index < book.authors.length - 1 && ', '}
-						</React.Fragment>
-					))}
-				</p>
+				</div>
+
 				{book.metadata.blurb && (
-					<p className='text-lg font-medium text-bones-black dark:text-bones-linen'>
-						{book.metadata.blurb}
+					<p className='italic font-medium text-bones-black dark:text-bones-linen'>
+						&quot;{book.metadata.blurb}&quot;
 					</p>
 				)}
-				<p className='text-base font-medium text-bones-darkgray dark:text-bones-linen'>
-					Published by {book.metadata.publisher},{' '}
-					{book.metadata.publishYear}
+
+				<p className='font-medium text-bones-black dark:text-bones-linen'>
+					{book.personalComment}
 				</p>
 
 				{links.length > 0 && (
@@ -78,34 +55,33 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 								href={link.url}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='text-bones-blue dark:text-bones-gold hover:underline text-base font-medium'>
+								className='text-bones-blue dark:text-bones-gold hover:underline font-semibold'>
 								{link.label}
 							</a>
 						))}
 					</div>
 				)}
+
+				<p className='font-medium text-bones-dimgray dark:text-bones-linen'>
+					{book.metadata.publisher}, {book.metadata.publishYear}
+				</p>
 			</div>
 
-			{/* quote + comment */}
-			<div className='col-span-12 lg:col-span-6 overflow-y-auto max-h-full pr-4 flex flex-col gap-8'>
+			{/* COLUMN -- 3 */}
+			<div className='col-span-12 lg:col-span-4 overflow-y-auto max-h-full pr-4 flex flex-col gap-8'>
 				{book.quote && (
 					<div>
-						<blockquote className='text-4xl font-semibold italic text-bones-black dark:text-bones-linen'>
+						<blockquote className='text-4xl leading-tight font-semibold italic text-bones-black dark:text-bones-linen'>
 							&quot;{book.quote.text}&quot;
 						</blockquote>
 						{book.quote.attribute && (
-							<p className='text-2xl font-medium text-bones-black dark:text-bones-linen mt-4'>
+							<p className='text-xl font-medium text-bones-black dark:text-bones-linen mt-4'>
 								— {book.quote.attribute}
 							</p>
 						)}
 					</div>
 				)}
-				<p className='text-2xl font-medium text-bones-black dark:text-bones-linen'>
-					{book.personalComment}
-				</p>
 			</div>
-
-			{/* METADATA COLUMN */}
 		</div>
 	);
 };
