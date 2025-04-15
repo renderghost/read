@@ -15,9 +15,9 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 	].filter(link => link.url && link.url !== '#');
 
 	return (
-		<div className='w-full h-full grid grid-cols-1 lg:grid-cols-11 gap-12 p-12'>
+		<div className='container mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-12 gap-12 py-12'>
 			{/* COLUMN -- 1 */}
-			<div className='col-span-12 overflow-y-auto lg:col-span-3 flex flex-col items-start gap-4'>
+			<div className='col-span-12 overflow-y-auto lg:col-span-2 flex flex-col items-start gap-4'>
 				<Image
 					src={book.coverImage}
 					alt={`Cover of ${book.title}`}
@@ -27,10 +27,13 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 					className='w-full h-auto object-cover border border-bones-black/10'
 					priority
 				/>
+				<p className='font-medium text-bones-dimgray dark:text-bones-linen'>
+					{book.metadata.publisher}, {book.metadata.publishYear}
+				</p>
 			</div>
 
 			{/* COLUMN -- 2 */}
-			<div className='col-span-12 lg:col-span-4 overflow-y-auto flex flex-col gap-4 text-xl'>
+			<div className='col-span-12 lg:col-span-6 overflow-y-auto flex flex-col gap-4 text-xl'>
 				<div className='flex flex-wrap gap-2'>
 					<span className='px-2 py-1 bg-bones-linen text-bones-black dark:bg-bones-dimgray dark:text-bones-linen font-medium'>
 						{book.metadata.genre}
@@ -61,17 +64,13 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 						))}
 					</div>
 				)}
-
-				<p className='font-medium text-bones-dimgray dark:text-bones-linen'>
-					{book.metadata.publisher}, {book.metadata.publishYear}
-				</p>
 			</div>
 
 			{/* COLUMN -- 3 */}
-			<div className='col-span-12 lg:col-span-4 overflow-y-auto max-h-full pr-4 flex flex-col gap-8'>
+			<div className='col-span-12 lg:col-span-4 overflow-y-auto max-h-full flex flex-col gap-8'>
 				{book.quote && (
 					<div>
-						<blockquote className='text-4xl leading-tight font-semibold italic text-bones-black dark:text-bones-linen'>
+						<blockquote className='text-3xl leading-tight font-semibold italic text-bones-black dark:text-bones-linen'>
 							&quot;{book.quote.text}&quot;
 						</blockquote>
 						{book.quote.attribute && (
