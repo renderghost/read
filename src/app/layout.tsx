@@ -18,10 +18,55 @@ const dmSerifDisplay = DM_Serif_Display({
 	display: 'swap',
 });
 
-// Metadata for the site
+const siteUrl = 'https://read.renderg.host';
+const siteTitle = 'Read | Book recommendations by Barry Prendergast.';
+const siteDescription =
+	'24 books to re-shape how you think about great design.';
+const defaultImage = `${siteUrl}/og-default.jpg`; // Add this image to public/og-default.jpg
+
 export const metadata: Metadata = {
-	title: 'Read | Book recommendations by Barry Prendergast.',
-	description: '24 books to re-shape how you think about great design.',
+	title: siteTitle,
+	description: siteDescription,
+	metadataBase: new URL(siteUrl),
+	alternates: {
+		canonical: siteUrl,
+	},
+	openGraph: {
+		type: 'website',
+		url: siteUrl,
+		title: siteTitle,
+		description: siteDescription,
+		images: [
+			{
+				url: defaultImage,
+				width: 1200,
+				height: 630,
+				alt: 'Book recommendations by Barry Prendergast',
+			},
+		],
+		siteName: 'Read',
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: siteTitle,
+		description: siteDescription,
+		images: [defaultImage],
+	},
+	keywords: [
+		'book recommendations',
+		'design books',
+		'Barry Prendergast',
+		'creative thinking',
+		'best books',
+	],
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+		},
+	},
 };
 
 // Root layout component with TypeScript typing
