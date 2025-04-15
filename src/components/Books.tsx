@@ -61,7 +61,7 @@ const TiltWrapper: React.FC<{
 			className='relative aspect-[33/50] w-full overflow-hidden cursor-pointer will-change-transform rounded'
 			onMouseMove={animate}
 			onMouseLeave={stopAnimating}
-			whileHover={{ scale: 1.04, zIndex: 10 }}
+			whileHover={{ scale: 1.03, zIndex: 10 }}
 			onClick={onClick}
 			animate={{
 				rotateX: rotations.x,
@@ -70,7 +70,7 @@ const TiltWrapper: React.FC<{
 			}}
 			transition={{
 				type: 'spring',
-				stiffness: 120, // <- higher is snappier, lower is softer
+				stiffness: 200, // <- higher is snappier, lower is softer
 				damping: 8, // <- higher is slower to settle, lower is quicker
 			}}
 			style={{
@@ -90,7 +90,7 @@ const TiltWrapper: React.FC<{
 			{/* Optional glare layer — off by default */}
 			<motion.div
 				style={{
-					display: 'block', // <- turn to 'block' to enable glare effect
+					display: 'none', // <- turn to 'block' to enable glare effect
 					zIndex: 2,
 					mixBlendMode: 'overlay',
 					position: 'absolute',
