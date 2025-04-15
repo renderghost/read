@@ -125,8 +125,8 @@ export const books: Book[] = [
 			'Huxley’s exploration of consciousness urges designers to reconsider how perception is constructed—and constrained. By disrupting your default assumptions, it invites a more inclusive, imaginative design mindset. This book is a powerful reminder that not all users experience reality the same way. For UX practitioners, it’s a prompt to design beyond convention, embrace difference, and rethink what “intuitive” really means. It won’t teach interface patterns, but it will stretch your empathy and perception—critical tools for creating meaningful, human-centred experiences.',
 	},
 	{
-		title: 'Game Storming',
-		slug: `game-storming`,
+		title: 'Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers',
+		slug: `gamestorming`,
 		authors: [
 			{
 				name: 'Dave Gray',
@@ -141,7 +141,7 @@ export const books: Book[] = [
 				link: 'https://www.linkedin.com/in/macgeo/',
 			},
 		],
-		coverImage: '#/books/gray.jpg',
+		coverImage: '/books/gray.jpg',
 		metadata: {
 			blurb: 'A playbook for innovators, rule breakers, and changemakers, offering a collection of games and activities to unlock creativity and drive better collaboration.',
 			genre: 'Business',
