@@ -170,7 +170,7 @@ const Books: React.FC<{ className?: string }> = ({ className = '' }) => {
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
 				onBookChange={(book: Book) => {
-					const bookSlug = book.title
+					const bookSlug = book.slug
 						.toLowerCase()
 						.replace(/\s+/g, '-');
 					router.push(`/?book=${bookSlug}`);
