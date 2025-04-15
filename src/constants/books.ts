@@ -2,7 +2,8 @@ import { Book } from '@/types/Book';
 
 export const books: Book[] = [
 	{
-		title: 'Designing Interfaces',
+		title: 'Designing Interfaces: Patterns for Effective Interaction Design',
+		slug: `designing-interfaces-patterns-for-effective-interaction-design`,
 		authors: [
 			{
 				name: 'Jenifer Tidwell',
@@ -11,7 +12,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/tidwell.jpg',
 		metadata: {
-			blurb: 'A practical guide to user interface patterns and best practices, enabling designers to craft user-friendly and intuitive experiences across diverse platforms.',
+			blurb: "Despite all of the UI toolkits available today, it's still not easy to design good application interfaces. This bestselling book is one of the few reliable sources to help you navigate through the maze of design options. By capturing UI best practices and reusable ideas as design patterns, Designing Interfaces provides solutions to common design problems that you can tailor to the situation at hand.",
 			genre: 'User Interface Design',
 			pageCount: 368,
 			publisher: "O'Reilly Media",
@@ -24,13 +25,14 @@ export const books: Book[] = [
 		},
 		quote: {
 			attribute: 'Jenifer Tidwell',
-			text: "UX designers have to constantly learn about human psychology, interaction design, information architecture and user research techniques, just to name a few, in order to create the right solutions to a user's problems.",
+			text: 'A user interface is well-designed when the program behaves exactly how the user thought it would.',
 		},
 		personalComment:
-			"This book provides a clear, structured overview of the core patterns that drive effective interface design. It highlights the importance of accessible, consistent interactions that enable people to engage with digital systems effortlessly.\n\nBy illustrating how patterns emerge from genuine user needs, it grounds design decisions in empathy and observation. These insights encourage a culture of ethical responsibility, ensuring that every interface genuinely supports its audience.\n\nUltimately, 'Designing Interfaces' fosters a strategic mindset by showing how carefully considered patterns can spark transformative change. In doing so, it serves as a cornerstone for UX designers determined to impact society positively through thoughtful interface development.",
+			'This book distills decades of interface design wisdom into clear, reusable patterns that solve real-world challenges. It’s not just about making things look good—it’s about making systems understandable, predictable, and humane. For UX designers, this is a reference manual for creating interfaces that align with human expectations and support user goals. It strengthens your design vocabulary and provides a shared language for working across disciplines. If you’re serious about designing with clarity, empathy, and intent, Designing Interfaces is essential—it bridges aesthetics with behavioural insight and shows how small design choices can create big impact.',
 	},
 	{
 		title: 'The Decision Book: Fifty Models for Strategic Thinking',
+		slug: `the-decision-book-fifty-models-for-strategic-thinking`,
 		authors: [
 			{
 				name: 'Mikael Krogerus',
@@ -57,10 +59,11 @@ export const books: Book[] = [
 			text: 'Complex realities demand simple tools for clear, strategic decisions.',
 		},
 		personalComment:
-			'This book presents a concise toolkit for anyone needing clarity in critical moments. Each model offers a structured approach to untangling uncertainty, allowing readers to see problems and solutions from a fresh perspective.\n\nTaken together, these models encourage self-awareness and deeper insight into how we make choices, big or small. By applying these frameworks, UX and service designers can become more intentional in crafting user-centric outcomes.\n\nUltimately, the text shows that combining simplicity with rigour can inform ethical, impactful design decisions. It’s a powerful resource for those who aim to create thoughtful, socially minded experiences and drive meaningful change.',
+			'This compact guide turns abstract strategy into concrete practice. The mental models inside help you make clearer decisions, structure thinking, and communicate ideas persuasively. For UX designers, it’s a versatile toolkit for aligning teams, framing user problems, and navigating complexity with confidence. Each model adds a new lens for systems thinking, user behaviour, or stakeholder alignment. Use it to sharpen facilitation, guide research synthesis, and bring clarity to messy conversations—making you not just a better designer, but a smarter collaborator.',
 	},
 	{
 		title: 'The Doors of Perception',
+		slug: `the-doors-of-perception`,
 		authors: [
 			{
 				name: 'Aldous Huxley',
@@ -86,10 +89,11 @@ export const books: Book[] = [
 			text: 'To see ourselves as others see us is a most salutary gift. Hardly less important is the capacity to see others as they see themselves.',
 		},
 		personalComment:
-			'Reading this text encourages you to question the default ways we interpret and structure reality, which is crucial for UX designers aiming to create inclusive, boundary-pushing solutions.\n\nBy delving into altered states of mind and challenging conventional wisdom, Huxley’s perspective opens up new pathways for empathy and understanding. This deepened awareness can translate into designing experiences that resonate with a broader spectrum of human perceptions.\n\nUltimately, it reminds us that fresh, inventive design solutions often stem from examining the hidden assumptions in our own viewpoints. Embracing alternative perceptions can be a powerful catalyst for social change and ethical practice.',
+			'Huxley’s exploration of consciousness urges designers to reconsider how perception is constructed—and constrained. By disrupting your default assumptions, it invites a more inclusive, imaginative design mindset. This book is a powerful reminder that not all users experience reality the same way. For UX practitioners, it’s a prompt to design beyond convention, embrace difference, and rethink what “intuitive” really means. It won’t teach interface patterns, but it will stretch your empathy and perception—critical tools for creating meaningful, human-centred experiences.',
 	},
 	{
 		title: 'The End of the World Is Just the Beginning',
+		slug: `the-end-of-the-world-is-just-the-beginning`,
 		authors: [
 			{
 				name: 'Peter Zeihan',
@@ -116,10 +120,11 @@ export const books: Book[] = [
 			text: 'Geography does not change. Demographics do not lie. And we have a historyful of history as to how countries and peoples react to their environment.',
 		},
 		personalComment:
-			'Zeihan’s work offers a compelling macro-level perspective that can help UX designers anticipate future societal shifts and adapt their thinking around technological and social change.\n\nBy examining how demographic trends, geopolitics, and economics interact, the book provokes a systems-thinking mindset. As designers, this heightened awareness can lead us to create solutions that respond effectively to emerging global conditions.\n\nOverall, it encourages us to look beyond familiar frameworks and plan for the changes ahead, ensuring we make meaningful contributions to society by designing with a deep understanding of the larger forces shaping our world.',
+			'Zeihan offers a geopolitical systems view that reshapes how we think about design’s context. As the global order shifts, so do infrastructures, markets, and user needs. This book equips UX designers with a macro lens—helping us anticipate how demographic and political forces influence access, equity, and sustainability. Whether you’re working on international products or local services, this book pushes you to design for the long term, beyond the current hype cycle. Think of it as future-proofing your mindset.',
 	},
 	{
 		title: 'Fully Automated Luxury Communism: A Manifesto',
+		slug: `fully-automated-luxury-communism-a-manifesto`,
 		authors: [
 			{
 				name: 'Aaron Bastani',
@@ -146,10 +151,11 @@ export const books: Book[] = [
 			text: 'We have a world to win.',
 		},
 		personalComment:
-			'Bastani urges readers to consider how technology and automation can serve collective well-being, rather than merely drive private profit, prompting bold thinking about structural reform.\n\nFrom a design standpoint, this mindset encourages imagining systems that place people’s welfare first. Designers who see themselves as changemakers can glean insights into building social equity directly into their innovations.\n\nUltimately, the text challenges conventional economic assumptions. It inspires socially responsible, future-focused design solutions that aim for a balanced, inclusive society where automation works for all.',
+			'This provocative read imagines a future where automation creates abundance, not scarcity. It challenges designers to move beyond optimising for profit and instead ask: what does equity look like in digital systems? For UX professionals, it reframes technology’s purpose—prompting questions about ownership, access, and ethical design. It’s not a how-to book, but it invites bold rethinking of what design could be in service of. Read it if you see design as a force for shaping systems, not just screens.',
 	},
 	{
 		title: 'Gödel, Escher, Bach: An Eternal Golden Braid',
+		slug: `godel-escher-bach-an-eternal-golden-braid`,
 		authors: [
 			{
 				name: 'Douglas R. Hofstadter',
@@ -175,10 +181,11 @@ export const books: Book[] = [
 			text: 'The "Strange Loop" phenomenon occurs whenever, by moving upwards (or downwards) through levels of some hierarchical system, we unexpectedly find ourselves right back where we started.',
 		},
 		personalComment:
-			'Hofstadter’s work exemplifies how patterns and structures underpin intelligence, offering lessons that stretch across disciplines. This awareness can sharpen a designer’s ability to detect deeper system-level insights.\n\nBy dissecting self-reference and playful logic, it prompts you to question normal boundaries between art, science, and philosophy—an openness that feeds a more holistic approach to designing for complex needs.\n\nUltimately, the text spurs curiosity about how we perceive and shape experiences. This mindset allows UX practitioners to craft not just functional interfaces, but meaningful interactions that acknowledge interconnected layers of design, society, and technology.',
+			'Hofstadter’s masterpiece is an intellectual playground that reveals the deep patterns connecting logic, art, and self-reference. For UX designers, it’s less about practical tips and more about pattern recognition, systems thinking, and recursive insight. It helps you see how meaning emerges from structure—critical when designing for complex workflows, adaptive content, or AI systems. It also cultivates a cross-disciplinary fluency that sharpens creativity. It’s dense but rewarding: a book that rewires your mental models.',
 	},
 	{
 		title: 'The Great Wall of China',
+		slug: `the-great-wall-of-china`,
 		authors: [
 			{
 				name: 'Franz Kafka',
@@ -194,7 +201,7 @@ export const books: Book[] = [
 			publishYear: 1931,
 		},
 		personalComment:
-			'Kafka’s short story about the construction of the Great Wall of China reveals how human efforts, no matter how monumental, can be both enabled and restricted by rigid systems and hierarchies. Visions of monumental change often masks the small, crucial details that define success or failure.\n\nBy reflecting on how those in power shape ambition, it prompts us to consider the ethical complexities in everything we build and facilitate with our labour. In design, paying attention to both lofty visions and the actual, day-to-day realities faced by end users in their real lives is vital.\n\nThis narrative highlights the tension between grand ideas and practical implementation. For changemakers, appreciating these complexities fosters more equitable solutions and ensures that the human element remains central to the design process.',
+			'Kafka’s parable is a mirror for the modern designer: grand visions often falter in the trenches of disjointed execution. It speaks to the friction between strategic ambition and real-world constraints—hierarchies, silos, and misaligned incentives. For UX designers, it’s a cautionary tale about forgetting the user and the worker amid lofty goals. It prompts reflection on power, purpose, and how systemic forces shape design outcomes. Read it to stay grounded, human-centred, and skeptical of the myth of perfect systems.',
 		quote: {
 			attribute: 'Franz Kafka',
 			text: 'Human nature, essentially changeable, unstable as the dust, can endure no restraint; if it binds itself it soon begins to tear madly at its bonds, until it rends everything asunder, the wall, the bonds, and its very self.',
@@ -209,6 +216,7 @@ export const books: Book[] = [
 	},
 	{
 		title: 'How to Make Sense of Any Mess',
+		slug: `how-to-make-sense-of-any-mess`,
 		authors: [
 			{
 				name: 'Abby Covert',
@@ -234,10 +242,11 @@ export const books: Book[] = [
 			text: 'Information architecture is the way that we arrange the parts of something to make it understandable.',
 		},
 		personalComment:
-			'This book illuminates a simple yet powerful approach to structuring chaos. By guiding readers through a detailed process for clarifying ambiguous content, it empowers you to bring a strategic edge to design.\n\nIt fosters an environment where communication is clear and focused on real human needs—vital for any UX designer aiming to create ethical, inclusive experiences. In doing so, it helps ensure that organisations can address core issues rather than symptoms.\n\nUltimately, Covert’s insights into sensemaking provide a robust framework for practitioners determined to shape meaningful change. By embracing this straightforward methodology, you place people’s understanding and well-being at the heart of every design decision.',
+			'The go-to guide for anyone confronting ambiguity. Covert’s book demystifies the practice of information architecture, offering plain-language steps to bring clarity to messy content and ideas. For UX designers, it’s a practical manual for untangling complexity—whether in product ecosystems, navigation, or stakeholder conversations. The tools here sharpen your ability to frame problems, define scope, and make information usable. It’s also one of the most human, generous design books out there—rooted in making things better, not just shinier.',
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
+		slug: `information-architecture-blueprints-for-the-web`,
 		authors: [
 			{
 				name: 'Christina Wodtke',
@@ -263,10 +272,11 @@ export const books: Book[] = [
 			text: 'Information architecture is the art and science of structuring and organizing the information in products and services, supporting usability and findability.',
 		},
 		personalComment:
-			'A practical guide to information architecture: a must-read for anyone involved in designing and structuring information-rich properties.',
+			'A practical introduction to structuring digital spaces so people can find what they need. Wodtke grounds information architecture in usability and content clarity, making it essential for UX designers working on content-heavy systems. While dated in parts, its core principles still hold: structure is invisible until it fails. Use this book to strengthen your skills in navigation design, taxonomy, and planning for scale. It’s especially helpful for bridging the gap between design, dev, and content.',
 	},
 	{
 		title: 'Information Dashboard Design',
+		slug: `information-dashboard-design`,
 		authors: [
 			{
 				name: 'Stephen Few',
@@ -291,10 +301,11 @@ export const books: Book[] = [
 			text: 'Dashboards are not reports; they are visual displays of the most important information needed to achieve one or more objectives.',
 		},
 		personalComment:
-			'The key principles of straightforward data presentation that can ensure clarity and actionable insights, avoiding the temptation to be too clever.',
+			'Few’s guide to dashboards is a masterclass in visual clarity. It teaches how to present complex data simply, truthfully, and without distraction—skills that go far beyond dashboards. For UX designers, it’s a primer on visual hierarchy, attention management, and user cognition. Whether you work with metrics, admin panels, or data reports, this book shows how to design for decisions, not decoration. Use it to fight data clutter and advocate for users who need fast, confident insight.',
 	},
 	{
 		title: 'Intertwingled: Information Changes Everything',
+		slug: `intertwingled-information-changes-everything`,
 		authors: [
 			{
 				name: 'Peter Morville',
@@ -321,10 +332,11 @@ export const books: Book[] = [
 			text: 'In the beginning was the word. But where do words begin? And where do they lead? Our expedition is fueled by questions.',
 		},
 		personalComment:
-			'A deep dive into the interconnectedness of data and design, exploring how information shapes our understanding of the world and the importance of designing for complexity.',
+			'Morville weaves design, systems, and language into a compelling meditation on complexity. This book helps UX designers see the web (and the world) as deeply interconnected—where choices ripple outward, and meaning is context-bound. It encourages thinking in systems, not silos; in relationships, not rows. It’s ideal for those working in large organisations or ecosystems. Read it to strengthen your conceptual understanding of information architecture and to articulate why structure is design.',
 	},
 	{
 		title: 'The Laws of Simplicity',
+		slug: `the-laws-of-simplicity`,
 		authors: [
 			{
 				name: 'John Maeda',
@@ -350,10 +362,11 @@ export const books: Book[] = [
 			text: 'Simplicity is about subtracting the obvious and adding the meaningful.',
 		},
 		personalComment:
-			'Concise guide to focusing on essentials: employ it to streamline complexity and keep attention on what actually matters with easy-to-grasp concepts.',
+			'Maeda’s ten laws are a compass for cutting through noise. In a world that generates complexity, this book argues for restraint, clarity, and elegance. Designers will appreciate its emphasis on designing what matters, not everything that’s possible. While short, it offers lasting ideas on minimalism, trade-offs, and meaningful reduction. Use it as a lens to assess your work—and as a reminder that good design often means removing, not adding.',
 	},
 	{
 		title: 'Mind Design II: Philosophy, Psychology, and Artificial Intelligence',
+		slug: `mind-design-ii-philosophy-psychology-and-artificial-intelligence`,
 		authors: [
 			{
 				name: 'John Haugeland',
@@ -379,10 +392,11 @@ export const books: Book[] = [
 			text: 'Minds are simply what brains do.',
 		},
 		personalComment:
-			'A deep exploration of the philosophical implications of artificial intelligence, challenging our understanding of the differences between minds and machines.',
+			"This collection unpacks the philosophical underpinnings of AI—what it means to think, to understand, to be 'a mind'. For designers working with intelligent systems, it offers crucial perspective on cognition, machine logic, and the limits of simulation. It’s not a light read, but it sharpens ethical and conceptual awareness. If you’re designing with or around AI, this book helps you grapple with what’s actually being built—and what’s merely being predicted.",
 	},
 	{
 		title: 'The Sciences of the Artificial',
+		slug: `the-sciences-of-the-artificial`,
 		authors: [
 			{
 				name: 'Herbert A. Simon',
@@ -408,10 +422,11 @@ export const books: Book[] = [
 			attribute: 'Herbert A. Simon',
 		},
 		personalComment:
-			'A foundational text in design theory that explores the nature of artificial systems and the principles of design, providing a framework for understanding the complexities of design processes.',
+			"Simon’s classic reframes design as a way of changing the world—not just styling it. He connects engineering, cognition, and systems theory into a unified design philosophy. For any designer or engineer, this is a foundational text: it legitimises our work as a 'science' of human-made systems, shaped by feedback loops and purpose. He offers tools for understanding complexity, iteration, and problem-solving at scale.",
 	},
 	{
 		title: 'Sound by Artists',
+		slug: `sound-by-artists`,
 		authors: [
 			{
 				name: 'Dan Lander',
@@ -441,10 +456,11 @@ export const books: Book[] = [
 			attribute: 'Dan Lander',
 		},
 		personalComment:
-			'A collection of essays and artworks that explore the intersection of sound and performance, challenging boundaries and encouraging new ways of thinking about art experiences.',
+			'A rich, interdisciplinary exploration of how sound intersects with perception, place, and meaning. This collection of essays asks readers to think beyond the visual and explore the dimensions of experience itself. It challenges sensory hierarchies and offers new ways to consider emotion, attention, and social spaces. For those curious about non-traditional modalities.',
 	},
 	{
 		title: 'Thinking, Fast and Slow',
+		slug: `thinking-fast-and-slow`,
 		authors: [
 			{
 				name: 'Daniel Kahneman',
@@ -470,10 +486,11 @@ export const books: Book[] = [
 			attribute: 'Daniel Kahneman',
 		},
 		personalComment:
-			'A deep dive into the dual systems of thought that shape our decisions and behaviours, providing insights into cognitive biases and the psychology of decision-making.',
+			'Kahneman’s research into the two modes of thinking —intuitive(fast) and deliberate (slow)— is essential for understanding human behaviour. It’s a cornerstone for behavioural design, helping UX practitioners recognise cognitive biases, mental shortcuts, and decision friction in themselves and their users. The book deepens empathy for how people process information, make mistakes, and form habits. Useful for guiding research, interface design, and ethical behavioural design. It’s dense, but transformative—grounding design in more-accessible human psychology.',
 	},
 	{
 		title: 'Transcend: The New Science of Self-Actualisation',
+		slug: `transcend-the-new-science-of-self-actualisation`,
 		authors: [
 			{
 				name: 'Scott Barry Kaufman',
@@ -498,10 +515,11 @@ export const books: Book[] = [
 			attribute: 'Scott Barry Kaufman',
 		},
 		personalComment:
-			'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
+			'Kaufman updates Maslow’s well-known hierarchy, grounding self-actualisation in modern psychology (and supported by evidence). It’s a guide to human potential—and to designing experiences that support it. In design, this means going beyond utility to support meaning, growth, and well-being. It’s particularly relevant in health, education, and mission-driven design. Use it to expand your sense of what user needs can include, and to remind yourself that great design nurtures a real person, not just the stuff on screen.',
 	},
 	{
 		title: 'The Visual Display of Quantitative Information',
+		slug: `the-visual-display-of-quantitative-information`,
 		authors: [
 			{
 				name: 'Edward R. Tufte',
@@ -527,10 +545,11 @@ export const books: Book[] = [
 			attribute: 'Edward R. Tufte',
 		},
 		personalComment:
-			'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
+			'Tufte’s seminal work defines excellence in data visualisation: clarity, integrity, and minimalism. Essential reading for any interface involving metrics, graphs, or structured data. It teaches how to reduce noise, honour the data, and communicate actionable insights in dashboards, research reports, or data-heavy content that empowers—not overwhelms—users. This book has shaped generations of designers and analysts for a reason.',
 	},
 	{
 		title: 'Ways of Seeing',
+		slug: `ways-of-seeing`,
 		authors: [
 			{
 				name: 'John Berger',
@@ -556,10 +575,11 @@ export const books: Book[] = [
 			attribute: 'John Berger',
 		},
 		personalComment:
-			'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
+			'A groundbreaking work that teaches us that seeing is never neutral—it’s shaped by culture, context, and power. Berger prompts readers to question assumptions about beauty, authority, and audience. It encourages a critical lens on visual language, representation in media, and both the politics and psychology of perception. Challenge your defaults and design decisions with a greater awareness of who’s being seen, who’s seeing, and who’s left out.',
 	},
 	{
 		title: 'What Tech Calls Thinking: An Inquiry into the Intellectual Bedrock of Silicon Valley',
+		slug: `what-tech-calls-thinking`,
 		authors: [
 			{
 				name: 'Adrian Daub',
@@ -585,10 +605,11 @@ export const books: Book[] = [
 			attribute: 'Adrian Daub',
 		},
 		personalComment:
-			"Provides a critical examination of Silicon Valley's ideologies, prompting reflection on the tech industry's influence on society.",
+			'Daub unpacks the ideologies behind the tech industry—its myths, mantras, and blind spots. For UX designers, it’s a necessary critique of the narratives that shape product decisions and workplace culture. It helps you spot the limits of disruption, question ethical blind spots, and understand your role in larger systems. As a participant in (and benficiary of) the proliferation of digital platforms, designers must develop a critical distance from the hype and design with integrity. A challenge in an industry that prizes scale over sense.',
 	},
 	{
 		title: "The Whole Internet: User's Guide and Catalog",
+		slug: `the-whole-internet-users-guide-and-catalog`,
 		authors: [
 			{
 				name: 'Ed Krol',
@@ -614,6 +635,6 @@ export const books: Book[] = [
 			attribute: 'Ed Krol',
 		},
 		personalComment:
-			"A time capsule of the web's early spirit that reminds me of the openness, curiosity, and DIY spirit of the early internet",
+			"The first book published by O’Reilly Books, 'The Whole Internet' is a a snapshot of the early web: messy, open, and full of possibility. A reminder of the internet’s original spirit: decentralised, user-driven, and experimental. While very outdated, it offers a perspective on how far we’ve come—and what we may have lost. It's important for people building on the internet to reconnect with a more human, curious, and DIY approach to designing spaces.",
 	},
 ];

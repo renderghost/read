@@ -1,5 +1,6 @@
 export interface Book {
 	title: string;
+	slug: string;
 	authors: {
 		name: string;
 		link?: string;

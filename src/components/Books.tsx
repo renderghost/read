@@ -116,7 +116,7 @@ const Books: React.FC<{ className?: string }> = ({ className = '' }) => {
 		if (bookSlug) {
 			const foundBook = books.find(
 				book =>
-					book.title.toLowerCase().replace(/\s+/g, '-') === bookSlug,
+					book.slug.toLowerCase().replace(/\s+/g, '-') === bookSlug,
 			);
 			if (foundBook) {
 				setSelectedBook(foundBook);
@@ -128,7 +128,7 @@ const Books: React.FC<{ className?: string }> = ({ className = '' }) => {
 	}, [searchParams]);
 
 	const handleBookClick = (book: Book) => {
-		const bookSlug = book.title.toLowerCase().replace(/\s+/g, '-');
+		const bookSlug = book.slug.toLowerCase().replace(/\s+/g, '-');
 		router.push(`/?book=${bookSlug}`);
 		setSelectedBook(book);
 		setIsModalOpen(true);
