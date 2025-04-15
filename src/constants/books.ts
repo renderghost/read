@@ -2,6 +2,39 @@ import { Book } from '@/types/Book';
 
 export const books: Book[] = [
 	{
+		title: 'Your Guide to Blueprinting the Practical Way',
+		slug: `blueprinting-the-practical-way`,
+		authors: [
+			{
+				name: 'Erika Flowers',
+				link: 'https://www.helloerikaflowers.com/',
+			},
+			{
+				name: 'Morgan Miller',
+				link: 'https://www.linkedin.com/in/morganbrandonmiller/',
+			},
+		],
+		coverImage: '/books/flowers.jpg',
+		metadata: {
+			blurb: 'A practical guide to blueprinting, covering essential techniques for creating detailed and accurate blueprints for various projects.',
+			genre: 'Technical Design',
+			pageCount: 250,
+			publisher: 'Technical Publications Inc.',
+			publishYear: 2024,
+		},
+		link: {
+			amazon: 'https://amzn.to/4lDainY',
+			goodreads:
+				'https://www.goodreads.com/book/show/64406200-your-guide-to-blueprinting-the-practical-way',
+		},
+		quote: {
+			attribute: 'Erika Flowers & Morgan Miller',
+			text: 'Blueprinting is more than just drawing lines; it’s about visualizing the future and making it tangible.',
+		},
+		personalComment:
+			'Flowers and Miller demystify blueprinting with hands-on advice and clear visuals. This book is a boon for students and professionals seeking to master the art of technical drawings. It bridges the gap between theory and practice, ensuring readers can confidently create blueprints that translate into real-world results. A must-read for anyone serious about precision and accuracy in design.',
+	},
+	{
 		title: 'Designing Interfaces: Patterns for Effective Interaction Design',
 		slug: `designing-interfaces-patterns-for-effective-interaction-design`,
 		authors: [
@@ -19,7 +52,7 @@ export const books: Book[] = [
 			publishYear: 2005,
 		},
 		link: {
-			amazon: 'https://www.amazon.com/Designing-Interfaces-Patterns-Effective-Interaction/dp/1449379702',
+			amazon: 'https://amzn.to/4cx8Yih',
 			goodreads:
 				'https://www.goodreads.com/book/show/344724.Designing_Interfaces',
 		},
@@ -50,7 +83,7 @@ export const books: Book[] = [
 			publishYear: 2011,
 		},
 		link: {
-			amazon: 'https://www.amazon.co.uk/Decision-Book-models-strategic-thinking/dp/1781259542',
+			amazon: 'https://amzn.to/3YvNKLI',
 			goodreads:
 				'https://www.goodreads.com/book/show/10206987-the-decision-book',
 		},
@@ -79,7 +112,7 @@ export const books: Book[] = [
 			publishYear: 1954,
 		},
 		link: {
-			amazon: 'https://www.amazon.com/Doors-Perception-Aldous-Huxley/dp/0060801719',
+			amazon: 'https://amzn.to/4lBMXTy',
 			goodreads:
 				'https://www.goodreads.com/book/show/3188964-the-doors-of-perception',
 			wikipedia: 'https://en.wikipedia.org/wiki/The_Doors_of_Perception',
@@ -90,6 +123,45 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'Huxley’s exploration of consciousness urges designers to reconsider how perception is constructed—and constrained. By disrupting your default assumptions, it invites a more inclusive, imaginative design mindset. This book is a powerful reminder that not all users experience reality the same way. For UX practitioners, it’s a prompt to design beyond convention, embrace difference, and rethink what “intuitive” really means. It won’t teach interface patterns, but it will stretch your empathy and perception—critical tools for creating meaningful, human-centred experiences.',
+	},
+	{
+		title: 'Game Storming',
+		slug: `game-storming`,
+		authors: [
+			{
+				name: 'Dave Gray',
+				link: 'https://xplaner.com/',
+			},
+			{
+				name: 'Sunni Brown',
+				link: 'https://sunnibrown.com/',
+			},
+			{
+				name: 'James Macanufo',
+				link: 'https://www.linkedin.com/in/macgeo/',
+			},
+		],
+		coverImage: '#/books/gray.jpg',
+		metadata: {
+			blurb: 'A playbook for innovators, rule breakers, and changemakers, offering a collection of games and activities to unlock creativity and drive better collaboration.',
+			genre: 'Business',
+			pageCount: 288,
+			publisher: 'O’Reilly Media',
+			publishYear: 2010,
+		},
+		link: {
+			wikipedia: 'https://en.wikipedia.org/wiki/Gamestorming',
+			amazon: 'https://amzn.to/3Y1mJzB',
+			goodreads:
+				'https://www.goodreads.com/book/show/9364936-gamestorming',
+			home: 'https://gamestorming.com/',
+		},
+		quote: {
+			attribute: 'Dave Gray',
+			text: 'Games are a form of structured play that can create a safe environment for innovation and change.',
+		},
+		personalComment:
+			'Gray et al. present a dynamic toolkit for fostering innovation through play. This book provides a wealth of collaborative techniques that break down barriers and encourage creative problem-solving. It’s perfect for teams looking to inject energy into their brainstorming sessions and generate fresh ideas. Whether you’re a designer, manager, or entrepreneur, this book will help you harness the power of games to transform your work.',
 	},
 	{
 		title: 'The End of the World Is Just the Beginning',
@@ -109,7 +181,7 @@ export const books: Book[] = [
 			publishYear: 2022,
 		},
 		link: {
-			amazon: 'https://www.amazon.com/End-World-Just-Beginning-Globalization/dp/006323047X',
+			amazon: 'https://amzn.to/4ieY8i9',
 			goodreads:
 				'https://www.goodreads.com/book/show/58782897-the-end-of-the-world-is-just-the-beginning',
 			wikipedia:
@@ -140,7 +212,7 @@ export const books: Book[] = [
 			publishYear: 2019,
 		},
 		link: {
-			amazon: 'https://www.amazon.com/Fully-Automated-Luxury-Communism-Bastani/dp/1786632624',
+			amazon: 'https://amzn.to/4ilCPvp',
 			goodreads:
 				'https://www.goodreads.com/book/show/37758635-fully-automated-luxury-communism',
 			wikipedia:
@@ -174,7 +246,7 @@ export const books: Book[] = [
 			wikipedia: 'https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach',
 			goodreads:
 				'https://www.goodreads.com/book/show/24113.G_del_Escher_Bach',
-			amazon: 'https://www.amazon.de/Godel-Escher-Bach-Eternal-Golden/dp/0465026567',
+			amazon: 'https://amzn.to/3RPWBnH',
 		},
 		quote: {
 			attribute: 'Douglas R. Hofstadter',
@@ -209,7 +281,7 @@ export const books: Book[] = [
 		link: {
 			wikipedia:
 				'https://en.wikipedia.org/wiki/The_Great_Wall_of_China_(short_story_collection)',
-			amazon: 'https://www.amazon.de/-/en/Great-Wall-China-Franz-Kafka/dp/1494712083',
+			amazon: 'https://amzn.to/3GakrIt',
 			goodreads:
 				'https://www.goodreads.com/book/show/177576.The_Great_Wall_of_China_and_other_Stories',
 		},
@@ -232,7 +304,7 @@ export const books: Book[] = [
 			publishYear: 2014,
 		},
 		link: {
-			amazon: 'https://www.amazon.de/-/en/How-Make-Sense-Any-Mess/dp/1500615994',
+			amazon: 'https://amzn.to/4je3ifw',
 			goodreads:
 				'https://www.goodreads.com/book/show/23557020-how-to-make-sense-of-any-mess',
 			home: 'https://www.howtomakesenseofanymess.com/',
@@ -243,6 +315,36 @@ export const books: Book[] = [
 		},
 		personalComment:
 			'The go-to guide for anyone confronting ambiguity. Covert’s book demystifies the practice of information architecture, offering plain-language steps to bring clarity to messy content and ideas. For UX designers, it’s a practical manual for untangling complexity—whether in product ecosystems, navigation, or stakeholder conversations. The tools here sharpen your ability to frame problems, define scope, and make information usable. It’s also one of the most human, generous design books out there—rooted in making things better, not just shinier.',
+	},
+	{
+		title: 'Indistractable',
+		slug: `indistractable`,
+		authors: [
+			{
+				name: 'Nir Eyal',
+				link: 'https://www.nirandfar.com/',
+			},
+		],
+		coverImage: '/books/eyal.jpg',
+		metadata: {
+			blurb: 'A guide to controlling your attention and choosing your life, teaching how to become indistractable in an increasingly distracting world.',
+			genre: 'Self-Help',
+			pageCount: 304,
+			publisher: 'Portfolio',
+			publishYear: 2019,
+		},
+		link: {
+			amazon: 'https://amzn.to/4cx4uYZ',
+			goodreads:
+				'https://www.goodreads.com/book/show/44595007-indistractable',
+			home: 'https://www.nirandfar.com/indistractable/',
+		},
+		quote: {
+			attribute: 'Nir Eyal',
+			text: 'The goal is not to resist every distraction, but to manage them.',
+		},
+		personalComment:
+			'Eyal provides a practical toolkit for reclaiming your focus. In an age of constant pings and notifications, this book offers a framework for understanding the root causes of distraction and actionable strategies for building habits that stick. It’s ideal for anyone looking to align their actions with their intentions and regain control over their time and attention. A must-read for the easily sidetracked.',
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
@@ -263,7 +365,7 @@ export const books: Book[] = [
 		},
 		link: {
 			wikipedia: 'https://en.wikipedia.org/wiki/Information_architecture',
-			amazon: 'https://www.amazon.de/-/en/Information-Architecture-Blueprints-Christina-Wodtke/dp/0735712506',
+			amazon: 'https://amzn.to/3REw6BT',
 			goodreads:
 				'https://www.goodreads.com/book/show/224130.Information_Architecture',
 		},
@@ -292,7 +394,7 @@ export const books: Book[] = [
 			publishYear: 2006,
 		},
 		link: {
-			amazon: 'https://www.amazon.de/-/en/Information-Dashboard-Design-at-glance/dp/1938377001',
+			amazon: 'https://amzn.to/3XZC7MS',
 			goodreads:
 				'https://www.goodreads.com/book/show/3254937-information-dashboard-design',
 		},
@@ -321,8 +423,7 @@ export const books: Book[] = [
 			publishYear: 2014,
 		},
 		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/Peter_Morville',
-			amazon: 'https://www.amazon.com/Intertwingled-Information-Everything-Peter-Morville/dp/0692225587',
+			amazon: 'https://amzn.to/42bU3GC',
 			goodreads:
 				'https://www.goodreads.com/book/show/22931460-intertwingled',
 			home: 'https://intertwingled.org/',
@@ -351,10 +452,9 @@ export const books: Book[] = [
 			publishYear: 2006,
 		},
 		link: {
-			wikipedia: 'https://en.wikipedia.org/wiki/The_Laws_of_Simplicity',
 			goodreads:
-				'https://www.goodreads.com/book/show/147000.The_Laws_of_Simplicity',
-			amazon: 'https://www.amazon.de/-/en/Laws-Simplicity-Design-Technology-Business/dp/0262539470',
+				'https://www.goodreads.com/book/show/225111.The_Laws_of_Simplicity',
+			amazon: 'https://amzn.to/4cyzQ15',
 			home: 'http://lawsofsimplicity.com/',
 		},
 		quote: {
@@ -384,7 +484,7 @@ export const books: Book[] = [
 		link: {
 			goodreads:
 				'https://www.goodreads.com/book/show/150696.Mind_Design_II',
-			amazon: 'https://www.amazon.de/-/en/Mind-Design-Philosophy-Psychology-Intelligence/dp/0262581531',
+			amazon: 'https://amzn.to/43Vllm2',
 			home: 'https://mitpress.mit.edu/9780262581530/mind-design-ii/',
 		},
 		quote: {
@@ -413,9 +513,9 @@ export const books: Book[] = [
 		},
 		link: {
 			goodreads:
-				'https://www.goodreads.com/book/show/162138.The_Sciences_of_the_Artificial',
-			amazon: 'https://www.amazon.com/Sciences-Artificial-Herbert-A-Simon/dp/0262691914',
-			home: 'https://mitpress.mit.edu/9780262691913/the-sciences-of-the-artificial/',
+				'https://www.goodreads.com/book/show/676046.The_Sciences_of_the_Artificial',
+			amazon: 'https://amzn.to/3Y2XOM1',
+			home: 'https://mitpress.mit.edu/9780262690232/the-sciences-of-the-artificial/',
 		},
 		quote: {
 			text: 'Everyone designs who devises courses of action aimed at changing existing situations into preferred ones.',
@@ -448,7 +548,7 @@ export const books: Book[] = [
 		link: {
 			goodreads:
 				'https://www.goodreads.com/book/show/15755476-sound-by-artists',
-			amazon: 'https://www.amazon.de/-/en/Sound-Artists-Dan-Lander/dp/1895166284',
+			amazon: 'https://amzn.to/4infLML',
 			home: 'https://www.blackwoodgallery.ca/publications/sound-by-artists',
 		},
 		quote: {
@@ -479,7 +579,7 @@ export const books: Book[] = [
 			wikipedia: 'https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow',
 			goodreads:
 				'https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow',
-			amazon: 'https://www.amazon.de/-/en/Thinking-Fast-Slow-Kahneman/dp/0374533555',
+			amazon: 'https://amzn.to/3EipBBB',
 		},
 		quote: {
 			text: 'A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth.',
@@ -507,8 +607,8 @@ export const books: Book[] = [
 		},
 		link: {
 			goodreads: 'https://www.goodreads.com/book/show/49625550-transcend',
-			amazon: 'https://www.amazon.com/Transcend-Science-Self-Actualization-Scott-Kaufman/dp/0143131206',
-			home: 'https://scottbarrykaufman.com/podcast/transcend-with-scott-barry-kaufman/',
+			amazon: 'https://amzn.to/4cDgzvE',
+			home: 'https://scottbarrykaufman.com/books/transcend/',
 		},
 		quote: {
 			text: 'Growth is a messy, nonlinear process.',
@@ -537,7 +637,7 @@ export const books: Book[] = [
 		link: {
 			goodreads:
 				'https://www.goodreads.com/book/show/17744.The_Visual_Display_of_Quantitative_Information_2nd_Ed_',
-			amazon: 'https://www.amazon.de/-/en/Visual-Display-Quantitative-Information/dp/1930824130',
+			amazon: 'https://amzn.to/4lLJZfk',
 			home: 'https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/',
 		},
 		quote: {
@@ -568,7 +668,7 @@ export const books: Book[] = [
 			wikipedia: 'https://en.wikipedia.org/wiki/Ways_of_Seeing',
 			goodreads:
 				'https://www.goodreads.com/book/show/2784.Ways_of_Seeing',
-			amazon: 'https://www.amazon.de/-/en/Ways-Seeing-Berger-Penguin-Classics/dp/014103579X',
+			amazon: 'https://amzn.to/3G96pqt',
 		},
 		quote: {
 			text: 'The way we see things is affected by what we know or what we believe.',
@@ -597,7 +697,7 @@ export const books: Book[] = [
 		link: {
 			goodreads:
 				'https://www.goodreads.com/book/show/50403471-what-tech-calls-thinking',
-			amazon: 'https://www.amazon.com/What-Tech-Calls-Thinking-Intellectual-ebook/dp/B084M1NCF7',
+			amazon: 'https://amzn.to/4ilurvz',
 			home: 'https://www.adriandaub.com/books/what-tech-calls',
 		},
 		quote: {
@@ -628,7 +728,7 @@ export const books: Book[] = [
 			wikipedia:
 				'https://en.wikipedia.org/wiki/Whole_Internet_User%27s_Guide_and_Catalog',
 			goodreads: 'https://www.goodreads.com/book/show/2954315',
-			amazon: 'https://www.amazon.com/Whole-Internet-Catalog-Nutshell-Handbook/dp/1565920252',
+			amazon: 'https://amzn.to/42JTG6d',
 		},
 		quote: {
 			text: 'The Internet connects thousands of computer networks around the world. The fact that all these networks can talk to each other is a marvel of modern technology.',
