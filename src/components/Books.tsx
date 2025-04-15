@@ -67,7 +67,7 @@ const Books: React.FC<BooksProps> = ({ className = '' }) => {
 					{books.map((book, index) => (
 						<motion.div
 							key={`${book.title}-${index}`}
-							className='bones-book-card relative aspect-[33/50] w-full overflow-hidden rounded-md cursor-pointer'
+							className='relative aspect-[33/50] w-full overflow-hidden cursor-pointer'
 							whileHover={{
 								scale: 1.05,
 								y: -8,
@@ -85,7 +85,7 @@ const Books: React.FC<BooksProps> = ({ className = '' }) => {
 								alt={`Cover of ${book.title}`}
 								fill
 								sizes='(max-width: 768px) 33vw, (max-width: 1200px) 25vw, 14vw'
-								className='object-cover w-full h-full border border-black/10 dark:border-white/10 shadow-md'
+								className='object-cover w-full h-full border border-black/10 dark:border-white/10'
 								priority={index < 7} // Load the first 7 images with priority
 							/>
 						</motion.div>
