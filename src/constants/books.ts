@@ -16,6 +16,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/flowers.jpg',
 		metadata: {
+			shortname: 'Blueprinting the Practical Way',
 			blurb: 'A practical guide to blueprinting, covering essential techniques for creating detailed and accurate blueprints for various projects.',
 			genre: 'Technical Design',
 			pageCount: 250,
@@ -45,6 +46,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/tidwell.jpg',
 		metadata: {
+			shortname: 'Designing Interfaces',
 			blurb: "Despite all of the UI toolkits available today, it's still not easy to design good application interfaces. This bestselling book is one of the few reliable sources to help you navigate through the maze of design options. By capturing UI best practices and reusable ideas as design patterns, Designing Interfaces provides solutions to common design problems that you can tailor to the situation at hand.",
 			genre: 'User Interface Design',
 			pageCount: 368,
@@ -76,6 +78,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/krogerus.jpg',
 		metadata: {
+			shortname: 'The Decision Book',
 			blurb: 'A compact guide offering 50 simple yet powerful mental models to assist in decision-making, personal reflection, and strategic thinking for professionals and individuals alike.',
 			genre: 'Decision-Making',
 			pageCount: 176,
@@ -95,6 +98,40 @@ export const books: Book[] = [
 			'This compact guide turns abstract strategy into concrete practice. The mental models inside help you make clearer decisions, structure thinking, and communicate ideas persuasively. For UX designers, it’s a versatile toolkit for aligning teams, framing user problems, and navigating complexity with confidence. Each model adds a new lens for systems thinking, user behaviour, or stakeholder alignment. Use it to sharpen facilitation, guide research synthesis, and bring clarity to messy conversations—making you not just a better designer, but a smarter collaborator.',
 	},
 	{
+		title: 'Discussing Design: Improving Communication and Collaboration through Critique',
+		slug: 'discussing-design',
+		authors: [
+			{
+				name: 'Adam Connor',
+				link: 'https://www.linkedin.com/in/aconnor/',
+			},
+			{
+				name: 'Aaron Irizarry',
+				link: 'https://www.linkedin.com/in/aaroni/',
+			},
+		],
+		coverImage: '/books/irizarry.jpg',
+		metadata: {
+			shortname: 'Discussing Design',
+			blurb: "Real critique has become a lost skill among collaborative teams today. Critique is intended to help teams strengthen their designs, products, and services, rather than be used to assert authority or push agendas under the guise of feedback. In this practical guide, authors Adam Connor and Aaron Irizarry teach you techniques, tools, and a framework for helping members of your design team give and receive critique. Using firsthand stories and lessons from prominent figures in the design community, this book examines the good, the bad, and the ugly of feedback. You'll come away with tips, actionable insights, activities, and a cheat sheet for practicing critique as a part of your collaborative process.",
+			genre: 'Design, Collaboration, Communication',
+			pageCount: 206,
+			publisher: "O'Reilly Media",
+			publishYear: 2015,
+		},
+		link: {
+			goodreads: 'https://www.goodreads.com/book/show/32049560',
+			amazon: 'https://amzn.to/4lMJNwq',
+			home: 'https://medium.com/discussing-design',
+		},
+		quote: {
+			text: 'Good critique is comprised of three key elements: It identifies a specific aspect of the idea or a decision in the design being analyzed. It relates that aspect or decision to an objective or best practice. It describes how and why the aspect or decision work to support or not support the objective or best practice.',
+			attribute: 'Adam Connor & Aaron Irizarry',
+		},
+		personalComment:
+			'This book is an essential resource for design teams and managers aiming to cultivate a culture of kind and constructive critique. Particularly useful are the anti-patterns for giving and receiving feedback, cultural influences, timing and frequency, facilitation techniques, and strategies for handling difficult situations. Solid foundational insights and a feedback framework: highly valuable for anyone involved in design feedback.',
+	},
+	{
 		title: 'The Doors of Perception',
 		slug: `the-doors-of-perception`,
 		authors: [
@@ -105,6 +142,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/huxley.jpg',
 		metadata: {
+			shortname: 'Doors of Perception',
 			blurb: 'A vivid exploration of perception and consciousness, challenging assumptions about reality and human experience.',
 			genre: 'Philosophy',
 			pageCount: 63,
@@ -143,6 +181,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/gray.jpg',
 		metadata: {
+			shortname: 'Gamestorming',
 			blurb: 'A playbook for innovators, rule breakers, and changemakers, offering a collection of games and activities to unlock creativity and drive better collaboration.',
 			genre: 'Business',
 			pageCount: 288,
@@ -174,6 +213,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/zeihan.jpg',
 		metadata: {
+			shortname: 'The End of the World Is Just the Beginning',
 			blurb: 'Peter Zeihan analyses shifting demographics, geopolitical tensions, and economic transitions to show how the unraveling of globalisation will reshape the balance of power and daily life around the world.',
 			genre: 'Geopolitics',
 			pageCount: 512,
@@ -205,6 +245,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/bastani.jpg',
 		metadata: {
+			shortname: 'Fully Automated Luxury Communism',
 			blurb: 'Aaron Bastani explores how advanced automation could radically transform economic structures, suggesting a future of shared abundance beyond traditional capitalist models.',
 			genre: 'Political Philosophy',
 			pageCount: 288,
@@ -236,6 +277,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/hofstadter.jpg',
 		metadata: {
+			shortname: 'An Eternal Golden Braid',
 			blurb: 'A captivating exploration of recursion, artificial intelligence, and the nature of consciousness, weaving themes from music, mathematics, and art to reveal the common threads underlying complex systems.',
 			genre: 'Cognitive Science',
 			pageCount: 777,
@@ -266,6 +308,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/kafka.jpg',
 		metadata: {
+			shortname: 'The Great Wall of China',
 			blurb: 'A short allegory that examines ambition, bureaucracy, and the human desire for grand achievement through the lens of an enormous construction project.',
 			genre: 'Short Story',
 			pageCount: 256,
@@ -297,6 +340,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/covert.jpg',
 		metadata: {
+			shortname: 'How to Make Sense of Any Mess',
 			blurb: 'Abby Covert provides strategies to tackle ambiguity and organise information so that people can engage with clarity and confidence.',
 			genre: 'Sensemaking Strategies',
 			pageCount: 174,
@@ -327,6 +371,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/eyal.jpg',
 		metadata: {
+			shortname: 'Indistractable',
 			blurb: 'A guide to controlling your attention and choosing your life, teaching how to become indistractable in an increasingly distracting world.',
 			genre: 'Self-Help',
 			pageCount: 304,
@@ -357,6 +402,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/wodtke.jpg',
 		metadata: {
+			shortname: 'Information Architecture',
 			blurb: 'A practical guide to structuring websites and apps so that users can easily find what they need, focusing on clarity, usability, and best practices in organising information.',
 			genre: 'Content Strategies',
 			pageCount: 224,
@@ -387,6 +433,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/few.jpg',
 		metadata: {
+			shortname: 'Information Dashboard Design',
 			blurb: 'A concise, practical guide to designing dashboards for effective data presentation. Stephen Few emphasises clarity, efficiency, and user-centric layout to drive insightful decision-making.',
 			genre: 'Data Visualisation',
 			pageCount: 223,
@@ -416,6 +463,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/morville.jpg',
 		metadata: {
+			shortname: 'Intertwingled',
 			blurb: 'A look at how information architecture and design intersect, showing how interconnected data shapes our world and underlining the importance of designing for complexity.',
 			genre: 'Information Science',
 			pageCount: 197,
@@ -446,6 +494,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/maeda.jpg',
 		metadata: {
+			shortname: 'Laws of Simplicity',
 			genre: 'Design',
 			pageCount: 128,
 			publisher: 'The MIT Press',
@@ -475,6 +524,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/haugeland.jpg',
 		metadata: {
+			shortname: 'Mind Design II',
 			blurb: 'A philosophical look at artificial intelligence, uniting psychology and computation to examine the nature of cognition and what truly defines a mind.',
 			genre: 'Artificial Intelligence',
 			pageCount: 488,
@@ -505,6 +555,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/simon.jpg',
 		metadata: {
+			shortname: 'The Sciences of the Artificial',
 			blurb: 'A foundational text bridging engineering, economics, and cognition, outlining a broad framework for how we design and understand artificial systems.',
 			genre: 'Design Theory',
 			pageCount: 216,
@@ -525,40 +576,6 @@ export const books: Book[] = [
 			"Simon’s classic reframes design as a way of changing the world—not just styling it. He connects engineering, cognition, and systems theory into a unified design philosophy. For any designer or engineer, this is a foundational text: it legitimises our work as a 'science' of human-made systems, shaped by feedback loops and purpose. He offers tools for understanding complexity, iteration, and problem-solving at scale.",
 	},
 	{
-		title: 'Sound by Artists',
-		slug: `sound-by-artists`,
-		authors: [
-			{
-				name: 'Dan Lander',
-				link: 'https://www.ubu.com/sound/lander.html',
-			},
-			{
-				name: 'Micah Lexier',
-				link: 'https://www.micahlexier.com/',
-			},
-		],
-		coverImage: '/books/lander.jpg',
-		metadata: {
-			blurb: 'A diverse collection of essays and artworks reflecting on the intersections of audio, performance, and conceptual art, expanding the boundaries of how we experience sound.',
-			genre: 'Art',
-			pageCount: 372,
-			publisher: 'Charivari Press & Blackwood Gallery',
-			publishYear: 1990,
-		},
-		link: {
-			goodreads:
-				'https://www.goodreads.com/book/show/15755476-sound-by-artists',
-			amazon: 'https://amzn.to/4infLML',
-			home: 'https://www.blackwoodgallery.ca/publications/sound-by-artists',
-		},
-		quote: {
-			text: 'Sound art is situated between categories, between seeing and hearing, between time-based media and object-based media.',
-			attribute: 'Dan Lander',
-		},
-		personalComment:
-			'A rich, interdisciplinary exploration of how sound intersects with perception, place, and meaning. This collection of essays asks readers to think beyond the visual and explore the dimensions of experience itself. It challenges sensory hierarchies and offers new ways to consider emotion, attention, and social spaces. For those curious about non-traditional modalities.',
-	},
-	{
 		title: 'Thinking, Fast and Slow',
 		slug: `thinking-fast-and-slow`,
 		authors: [
@@ -569,6 +586,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/kahneman.jpg',
 		metadata: {
+			shortname: 'Thinking, Fast and Slow',
 			blurb: 'An in-depth look at the dual processes of thought—automatic intuition and deliberate reasoning—revealing how these systems shape our choices and biases.',
 			genre: 'Psychology',
 			pageCount: 512,
@@ -599,6 +617,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/kaufman.jpg',
 		metadata: {
+			shortname: 'Transcend',
 			blurb: 'A deep exploration of the science of self-actualisation, blending psychology, philosophy, and personal development to provide a roadmap for achieving transcendence.',
 			genre: 'Psychology',
 			pageCount: 432,
@@ -628,6 +647,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/tufte.jpg',
 		metadata: {
+			shortname: 'Visual Display of Quantitative Information',
 			blurb: 'The defining document for precise yet aesthetic data visualisation: Tufte creates principles of clarity and integrity in presenting engaging actionable information.',
 			genre: 'Data Visualisation',
 			pageCount: 197,
@@ -658,6 +678,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/berger.jpg',
 		metadata: {
+			shortname: 'Ways of Seeing',
 			blurb: 'A seminal work that challenges traditional perceptions of art and culture, encouraging readers to question the ways in which we see and interpret the world around us.',
 			genre: 'Art Criticism',
 			pageCount: 166,
@@ -688,6 +709,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/daub.jpg',
 		metadata: {
+			shortname: 'What Tech Calls Thinking',
 			blurb: "Provides a critical examination of Silicon Valley's ideologies, prompting reflection on the tech industry's influence on society.",
 			genre: 'Technology Critique',
 			pageCount: 160,
@@ -718,6 +740,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/krol.jpg',
 		metadata: {
+			shortname: 'The Whole Internet',
 			blurb: "A time capsule of the web's early spirit that reveals openness, curiosity, and the DIY approach that characterised the birth of the internet.",
 			genre: 'Technology',
 			pageCount: 640,

@@ -7,6 +7,7 @@ export interface Book {
 	}[];
 	coverImage: string;
 	metadata: {
+		shortname: string;
 		blurb?: string;
 		genre: string;
 		pageCount?: number;
