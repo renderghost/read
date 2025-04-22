@@ -17,7 +17,7 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 	return (
 		<div className='container mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-12 gap-12 py-12'>
 			{/* COLUMN -- 1 */}
-			<div className='col-span-12 overflow-y-auto lg:col-span-2 flex flex-col items-start gap-4'>
+			<div className='col-span-12  lg:col-span-2 flex flex-col items-start gap-4'>
 				<Image
 					src={book.coverImage}
 					alt={`Cover of ${book.title}`}
