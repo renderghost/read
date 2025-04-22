@@ -371,7 +371,7 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/eyal.jpg',
 		metadata: {
-			shortname: 'Indistractable',
+			shortname: 'Psychology',
 			blurb: 'A guide to controlling your attention and choosing your life, teaching how to become indistractable in an increasingly distracting world.',
 			genre: 'Self-Help',
 			pageCount: 304,
@@ -389,7 +389,7 @@ export const books: Book[] = [
 			text: 'The goal is not to resist every distraction, but to manage them.',
 		},
 		personalComment:
-			'Eyal provides a practical toolkit for reclaiming your focus. In an age of constant pings and notifications, this book offers a framework for understanding the root causes of distraction and actionable strategies for building habits that stick. It’s ideal for anyone looking to align their actions with their intentions and regain control over their time and attention. A must-read for the easily sidetracked.',
+			'Eyal provides a practical toolkits for reclaiming focus (and as designers, not stealing it from others). In an age of constant pings and notifications, this book offers a framework for understanding the root causes of distraction and actionable strategies for building habits that stick. It talks about connecting action with intention, and controlling time and attention.',
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
