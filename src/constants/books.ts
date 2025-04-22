@@ -371,9 +371,9 @@ export const books: Book[] = [
 		],
 		coverImage: '/books/eyal.jpg',
 		metadata: {
-			shortname: 'Psychology',
+			shortname: 'Indistractable',
 			blurb: 'A guide to controlling your attention and choosing your life, teaching how to become indistractable in an increasingly distracting world.',
-			genre: 'Self-Help',
+			genre: 'Psychology',
 			pageCount: 304,
 			publisher: 'Portfolio',
 			publishYear: 2019,
