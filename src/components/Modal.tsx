@@ -154,10 +154,10 @@ const Modal: React.FC<ModalProps> = ({
 								stiffness: 200,
 								damping: 25,
 							}}
-							className='grid grid-rows-[auto_1fr_auto] w-screen h-screen bg-bones-white dark:bg-bones-dimgray overflow-hidden'
+							className='grid grid-rows-[auto_1fr_auto] w-screen h-screen bg-bones-white dark:bg-bones-black overflow-hidden'
 							ref={contentRef}>
 							{/* Header */}
-							<div className='flex justify-between items-center px-12 py-8 gap-4 border-b border-bones-black dark:border-bones-linen'>
+							<div className='flex justify-between items-center px-12 py-8 gap-4 border-b border-bones-whitesmoke dark:border-bones-dimgray'>
 								<div className='flex items-center '>
 									<h2
 										id='modal-title'
@@ -188,7 +188,7 @@ const Modal: React.FC<ModalProps> = ({
 								<button
 									ref={closeButtonRef}
 									onClick={onClose}
-									className='p-2 rounded-full bg-bones-transparent dark:bg-bones-slategray hover:bg-bones-aliceblue dark:hover:bg-bones-black text-bones-black hover:text-bones-blue dark:text-bones-linen  transition-colors'>
+									className='p-2 rounded-full bg-bones-transparent dark:bg-bones-black hover:bg-bones-aliceblue dark:hover:bg-bones-black text-bones-black hover:text-bones-blue dark:hover:text-bones-gold dark:text-bones-linen  transition-colors'>
 									<X className='w-5 h-5' />
 								</button>
 							</div>
@@ -199,39 +199,50 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 
 							{/* Pager */}
-							<div className='flex justify-between gap-0 border-t border-bones-black dark:border-bones-linen'>
+							<div className='flex justify-between gap-0 border-t border-bones-whitesmoke dark:border-bones-dimgray'>
 								<button
 									onClick={handlePrevious}
 									disabled={!previousBook}
 									aria-disabled={!previousBook}
-									className={`flex flex-col flex-grow w-full items-start px-12 py-8 gap-1 bg-bones-white hover:bg-bones-aliceblue  ${
-										!previousBook
-											? 'opacity-50 cursor-not-allowed'
-											: 'hover:bg-bones-transparent'
-									}`}>
-									<span className='text-xl font-black text-bones-black hover:text-bones-blue dark:text-bones-gold'>
-										{previousBook?.metadata.shortname ||
+									className='
+      flex flex-col flex-grow w-full items-start
+      px-12 py-8 gap-1
+      bg-bones-white dark:bg-bones-black
+      text-bones-black dark:text-bones-linen
+      hover:bg-bones-aliceblue dark:hover:bg-bones-black
+      hover:text-bones-blue dark:hover:text-bones-gold
+      disabled:bg-bones-whitesmoke dark:disabled:bg-bones-black
+      disabled:text-bones-gray
+      disabled:cursor-not-allowed
+      transition-colors
+    '>
+									<span className='text-xl font-black'>
+										{previousBook?.metadata.shortname ??
 											'Start'}
 									</span>
-									<span className='font-medium text-bones-black dark:text-bones-linen'>
-										PREV
-									</span>
+									<span className='font-medium'>PREV</span>
 								</button>
+
 								<button
 									onClick={handleNext}
 									disabled={!nextBook}
 									aria-disabled={!nextBook}
-									className={`flex flex-col flex-grow w-full items-end gap-1 px-12 py-8 bg-bones-white hover:bg-bones-aliceblue  ${
-										!nextBook
-											? 'opacity-50 cursor-not-allowed'
-											: 'hover:bg-bones-transparent'
-									}`}>
-									<span className='text-xl font-black text-bones-black hover:text-bones-blue dark:text-bones-gold'>
-										{nextBook?.metadata.shortname || 'End'}
+									className='
+      flex flex-col flex-grow w-full items-end
+      px-12 py-8 gap-1
+      bg-bones-white dark:bg-bones-black
+      text-bones-black dark:text-bones-linen
+      hover:bg-bones-aliceblue dark:hover:bg-bones-black
+      hover:text-bones-blue dark:hover:text-bones-gold
+      disabled:bg-bones-whitesmoke dark:disabled:bg-bones-darkgray
+      disabled:text-bones-gray
+      disabled:cursor-not-allowed
+      transition-colors
+    '>
+									<span className='text-xl font-black'>
+										{nextBook?.metadata.shortname ?? 'End'}
 									</span>
-									<span className='font-medium text-bones-black dark:text-bones-linen'>
-										NEXT
-									</span>
+									<span className='font-medium'>NEXT</span>
 								</button>
 							</div>
 						</motion.div>

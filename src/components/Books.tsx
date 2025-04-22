@@ -191,7 +191,7 @@ export const BooksSkeleton: React.FC<{ className?: string }> = ({
 				.map((_, index) => (
 					<div
 						key={index}
-						className='bones-book-card-skeleton relative aspect-[33/50] w-full overflow-hidden rounded-md bg-bones-gainsboro dark:bg-bones-slategray animate-pulse'></div>
+						className='bones-book-card-skeleton relative aspect-[33/50] w-full overflow-hidden rounded-md bg-bones-gainsboro dark:bg-bones-black animate-pulse'></div>
 				))}
 		</div>
 	</div>
