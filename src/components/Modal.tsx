@@ -6,6 +6,7 @@ import { Book } from '@/types/Book';
 import BookDetail from './BookDetail';
 import { books } from '@/constants/books';
 import { X } from 'lucide-react';
+import Head from 'next/head';
 
 interface ModalProps {
 	book: Book | null;
@@ -88,10 +89,53 @@ const Modal: React.FC<ModalProps> = ({
 	}, [isOpen]);
 
 	if (!book) return null;
+	const siteUrl = 'https://read.renderg.host';
+	const pageUrl = `${siteUrl}/?book=${encodeURIComponent(book.slug)}`;
+	const imageUrl = book.coverImage.startsWith('http')
+		? book.coverImage
+		: `${siteUrl}${book.coverImage}`;
+	const authors = book.authors.map(a => a.name).join(', ');
 
 	return (
-		<AnimatePresence>
-			{isOpen && (
+		<>
+			{book && (
+				<Head>
+					<title>{`${book.title} by ${authors} | Read`}</title>
+					<meta
+						name='description'
+						content={book.metadata.blurb || book.personalComment}
+					/>
+					<link rel='canonical' href={pageUrl} />
+
+					{/* Open Graph */}
+					<meta property='og:type' content='book' />
+					<meta property='og:url' content={pageUrl} />
+					<meta
+						property='og:title'
+						content={`${book.title} by ${authors}`}
+					/>
+					<meta
+						property='og:description'
+						content={book.metadata.blurb || book.personalComment}
+					/>
+					<meta property='og:image' content={imageUrl} />
+					<meta property='og:site_name' content='Read' />
+
+					{/* Twitter Card */}
+					<meta name='twitter:card' content='summary_large_image' />
+					<meta
+						name='twitter:title'
+						content={`${book.title} by ${authors}`}
+					/>
+					<meta
+						name='twitter:description'
+						content={book.metadata.blurb || book.personalComment}
+					/>
+					<meta name='twitter:image' content={imageUrl} />
+				</Head>
+			)}
+			<AnimatePresence>
+				{isOpen && book && (
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -123,7 +167,8 @@ const Modal: React.FC<ModalProps> = ({
 									className='text-3xl font-black text-bones-black dark:text-bones-linen'>
 									{book.title} by{' '}
 									{book.authors.map((author, index) => (
-										<React.Fragment key={index}>
+										<React.Fragment
+											key={`${book.slug}-${author.name}`}>
 											{author.link ? (
 												<a
 													href={author.link}
@@ -193,7 +238,8 @@ const Modal: React.FC<ModalProps> = ({
 					</motion.div>
 				</motion.div>
 			)}
-		</AnimatePresence>
+			</AnimatePresence>
+		</>
 	);
 };
 
