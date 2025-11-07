@@ -2,40 +2,6 @@ import { Book } from '@/types/Book';
 
 export const books: Book[] = [
 	{
-		title: 'Your Guide to Blueprinting the Practical Way',
-		slug: `blueprinting-the-practical-way`,
-		authors: [
-			{
-				name: 'Erika Flowers',
-				link: 'https://www.helloerikaflowers.com/',
-			},
-			{
-				name: 'Morgan Miller',
-				link: 'https://www.linkedin.com/in/morganbrandonmiller/',
-			},
-		],
-		coverImage: '/books/flowers.jpg',
-		metadata: {
-			shortname: 'Blueprinting the Practical Way',
-			blurb: 'A practical guide to blueprinting, covering essential techniques for creating detailed and accurate blueprints for various projects.',
-			genre: 'Technical Design',
-			pageCount: 250,
-			publisher: 'Technical Publications Inc.',
-			publishYear: 2024,
-		},
-		link: {
-			amazon: 'https://amzn.to/4lDainY',
-			goodreads:
-				'https://www.goodreads.com/book/show/64406200-your-guide-to-blueprinting-the-practical-way',
-		},
-		quote: {
-			attribute: 'Erika Flowers & Morgan Miller',
-			text: 'Blueprinting is more than just drawing lines; it’s about visualizing the future and making it tangible.',
-		},
-		personalComment:
-			'Flowers and Miller demystify blueprinting with hands-on advice and clear visuals. This book is a boon for students and professionals seeking to master the art of technical drawings. It bridges the gap between theory and practice, ensuring readers can confidently create blueprints that translate into real-world results. A must-read for anyone serious about precision and accuracy in design.',
-	},
-	{
 		title: 'Designing Interfaces: Patterns for Effective Interaction Design',
 		slug: `designing-interfaces-patterns-for-effective-interaction-design`,
 		authors: [
@@ -63,7 +29,7 @@ export const books: Book[] = [
 			text: 'A user interface is well-designed when the program behaves exactly how the user thought it would.',
 		},
 		personalComment:
-			'This book distills decades of interface design wisdom into clear, reusable patterns that solve real-world challenges. It’s not just about making things look good—it’s about making systems understandable, predictable, and humane. For UX designers, this is a reference manual for creating interfaces that align with human expectations and support user goals. It strengthens your design vocabulary and provides a shared language for working across disciplines. If you’re serious about designing with clarity, empathy, and intent, Designing Interfaces is essential—it bridges aesthetics with behavioural insight and shows how small design choices can create big impact.',
+			'Designing Interfaces is essential reading for anyone serious about designing for clarity, empathy, and intent. It book distills decades of interface design wisdom into clear, reusable patterns that address real-world challenges. It’s not just about making things look good—it’s about making systems more understandable, more predictable, and more humane.\n\nIt’s a reference manual for building interfaces that align with human expectations and support real goals. It connects aesthetics with behavioural insight and shows how small design decisions shape meaningful experiences. It sharpens your design vocabulary and creates a shared language for working across disciplines.\n\n ',
 	},
 	{
 		title: 'The Decision Book: Fifty Models for Strategic Thinking',
@@ -71,9 +37,11 @@ export const books: Book[] = [
 		authors: [
 			{
 				name: 'Mikael Krogerus',
+				link: 'https://de.wikipedia.org/wiki/Mikael_Krogerus',
 			},
 			{
 				name: 'Roman Tschäppeler',
+				link: 'https://de.wikipedia.org/wiki/Roman_Tsch%C3%A4ppeler',
 			},
 		],
 		coverImage: '/books/krogerus.jpg',
@@ -388,8 +356,7 @@ export const books: Book[] = [
 			attribute: 'Nir Eyal',
 			text: 'The goal is not to resist every distraction, but to manage them.',
 		},
-		personalComment:
-			'Eyal provides a practical toolkits for reclaiming focus (and as designers, not stealing it from others). In an age of constant pings and notifications, this book offers a framework for understanding the root causes of distraction and actionable strategies for building habits that stick. It talks about connecting action with intention, and controlling time and attention.',
+		personalComment: `In a world where products are designed to hijack attention, this book flips the lens: how do we protect our focus—and respect others? Eyal offers a framework for recognising distraction, managing internal triggers, and aligning actions with intent. For designers, this isn’t just self-help. It’s a wake-up call. We shape the digital environments that either support or sabotage attention. Indistractable pushes you to think about ethical design from the inside out. If your work nudges behaviour, this book helps you take responsibility for what—and who—you’re nudging. Clear, actionable, and refreshingly candid, it’s also a toolkit for managing your time, focus, and workflow. Not to be productive for productivity’s sake, but to protect what matters.`,
 	},
 	{
 		title: 'Information Architecture: Blueprints for the Web',
@@ -759,5 +726,39 @@ export const books: Book[] = [
 		},
 		personalComment:
 			"The first book published by O’Reilly Books, 'The Whole Internet' is a a snapshot of the early web: messy, open, and full of possibility. A reminder of the internet’s original spirit: decentralised, user-driven, and experimental. While very outdated, it offers a perspective on how far we’ve come—and what we may have lost. It's important for people building on the internet to reconnect with a more human, curious, and DIY approach to designing spaces.",
+	},
+	{
+		title: 'Your Guide to Blueprinting the Practical Way',
+		slug: `blueprinting-the-practical-way`,
+		authors: [
+			{
+				name: 'Erika Flowers',
+				link: 'https://www.helloerikaflowers.com/',
+			},
+			{
+				name: 'Morgan Miller',
+				link: 'https://www.linkedin.com/in/morganbrandonmiller/',
+			},
+		],
+		coverImage: '/books/flowers.jpg',
+		metadata: {
+			shortname: 'Blueprinting the Practical Way',
+			blurb: 'A practical guide to blueprinting, covering essential techniques for creating detailed and accurate blueprints for various projects.',
+			genre: 'Technical Design',
+			pageCount: 250,
+			publisher: 'Technical Publications Inc.',
+			publishYear: 2024,
+		},
+		link: {
+			amazon: 'https://amzn.to/4lDainY',
+			goodreads:
+				'https://www.goodreads.com/book/show/64406200-your-guide-to-blueprinting-the-practical-way',
+		},
+		quote: {
+			attribute: 'Erika Flowers & Morgan Miller',
+			text: 'Blueprinting is more than just drawing lines; it’s about visualizing the future and making it tangible.',
+		},
+		personalComment:
+			'Flowers and Miller demystify blueprinting with hands-on advice and clear visuals. This book is a boon for students and professionals seeking to master the art of technical drawings. It bridges the gap between theory and practice, ensuring readers can confidently create blueprints that translate into real-world results. A must-read for anyone serious about precision and accuracy in design.',
 	},
 ];

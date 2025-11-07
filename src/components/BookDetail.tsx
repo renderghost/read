@@ -42,13 +42,17 @@ const BookDetail: React.FC<BookProps> = ({ book }) => {
 
 				{book.metadata.blurb && (
 					<p className='italic font-medium text-bones-black dark:text-bones-linen'>
-						&quot;{book.metadata.blurb}&quot;
+						{book.metadata.blurb}
 					</p>
 				)}
 
-				<p className='font-medium text-bones-black dark:text-bones-linen'>
-					{book.personalComment}
-				</p>
+				{book.personalComment.split('\n\n').map((paragraph, index) => (
+					<p
+						className='font-medium text-bones-black dark:text-bones-linen'
+						key={index}>
+						{paragraph}
+					</p>
+				))}
 
 				{links.length > 0 && (
 					<div className='flex flex-wrap gap-4'>
